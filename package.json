@@ -8,6 +8,7 @@
     "start": "react-native start",
     "start-no-cache": "react-native start --reset-cache",
     "test": "jest",
+    "test:cover": "yarn run test --coverage",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "setup": "./scripts/setup.sh",
     "android-outputs": "./scripts/android-outputs.sh",
@@ -95,6 +96,9 @@
   },
   "jest": {
     "preset": "react-native",
+    "testPathIgnorePatterns" : [
+      "<rootDir>/.fttemplates/" 
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
@@ -114,6 +118,8 @@
     ],
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
-    }
+    },
+    "collectCoverage": true,
+    "coverageReporters": ["lcov", "json", "html"]
   }
 }
