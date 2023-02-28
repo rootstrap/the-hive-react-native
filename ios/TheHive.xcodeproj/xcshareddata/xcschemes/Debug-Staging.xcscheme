@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "ReactNativeBase.app"
-               BlueprintName = "ReactNativeBase"
-               ReferencedContainer = "container:ReactNativeBase.xcodeproj">
+               BuildableName = "TheHive.app"
+               BlueprintName = "TheHive"
+               ReferencedContainer = "container:TheHive.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ReactNativeBase.app"
-            BlueprintName = "ReactNativeBase"
-            ReferencedContainer = "container:ReactNativeBase.xcodeproj">
+            BuildableName = "TheHive.app"
+            BlueprintName = "TheHive"
+            ReferencedContainer = "container:TheHive.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "ReactNativeBase.app"
-            BlueprintName = "ReactNativeBase"
-            ReferencedContainer = "container:ReactNativeBase.xcodeproj">
+            BuildableName = "TheHive.app"
+            BlueprintName = "TheHive"
+            ReferencedContainer = "container:TheHive.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

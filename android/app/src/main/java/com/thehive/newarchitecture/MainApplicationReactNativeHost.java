@@ -1,4 +1,4 @@
-package com.reactnativebase.newarchitecture;
+package com.thehive.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -19,9 +19,9 @@ import com.facebook.react.fabric.CoreComponentsRegistry;
 import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.reactnativebase.BuildConfig;
-import com.reactnativebase.newarchitecture.components.MainComponentsRegistry;
-import com.reactnativebase.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import com.thehive.BuildConfig;
+import com.thehive.newarchitecture.components.MainComponentsRegistry;
+import com.thehive.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 
