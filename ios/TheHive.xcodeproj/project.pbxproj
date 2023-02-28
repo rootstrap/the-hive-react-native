@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* ReactNativeBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReactNativeBaseTests.m */; };
+		00E356F31AD99517003FC87E /* TheHiveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* TheHiveTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		423F6AAB2888EE8900927F6A /* BootSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 423F6AAA2888EE8900927F6A /* BootSplash.storyboard */; };
-		7BD1A54057EA747B02F2880A /* libPods-ReactNativeBase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1478BB1924F79D4BF5041AD /* libPods-ReactNativeBase.a */; };
-		E5DB18E2600904217A10F528 /* libPods-ReactNativeBase-ReactNativeBaseTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 752FC68F2E7B2A56E9903872 /* libPods-ReactNativeBase-ReactNativeBaseTests.a */; };
+		7BD1A54057EA747B02F2880A /* libPods-TheHive.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B1478BB1924F79D4BF5041AD /* libPods-TheHive.a */; };
+		E5DB18E2600904217A10F528 /* libPods-TheHive-TheHiveTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 752FC68F2E7B2A56E9903872 /* libPods-TheHive-TheHiveTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,41 +22,41 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = ReactNativeBase;
+			remoteInfo = TheHive;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* ReactNativeBaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactNativeBaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* TheHiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TheHiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* ReactNativeBaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactNativeBaseTests.m; sourceTree = "<group>"; };
-		0B2FB079886E2E07EF52B766 /* Pods-ReactNativeBase.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase.release-staging.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase.release-staging.xcconfig"; sourceTree = "<group>"; };
-		10FA6E9C9B57BD66AF7ED892 /* Pods-ReactNativeBase-ReactNativeBaseTests.debug-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase-ReactNativeBaseTests.debug-qa.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests.debug-qa.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* ReactNativeBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactNativeBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ReactNativeBase/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = ReactNativeBase/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReactNativeBase/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactNativeBase/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactNativeBase/main.m; sourceTree = "<group>"; };
-		2D98FE07C6B13EC18104DEB0 /* Pods-ReactNativeBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase.release.xcconfig"; sourceTree = "<group>"; };
-		4088188EB0721E64B5210F85 /* Pods-ReactNativeBase.release-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase.release-develop.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase.release-develop.xcconfig"; sourceTree = "<group>"; };
-		423F6AAA2888EE8900927F6A /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = ReactNativeBase/BootSplash.storyboard; sourceTree = "<group>"; };
-		58F5C8775B6DCB2FF489DAA4 /* Pods-ReactNativeBase-ReactNativeBaseTests.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase-ReactNativeBaseTests.debug-staging.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests.debug-staging.xcconfig"; sourceTree = "<group>"; };
-		5CDA9629E36EA1F3653DB76B /* Pods-ReactNativeBase.debug-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase.debug-develop.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase.debug-develop.xcconfig"; sourceTree = "<group>"; };
-		6E7163E37D59D8272B457BE3 /* Pods-ReactNativeBase-ReactNativeBaseTests.release-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase-ReactNativeBaseTests.release-develop.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests.release-develop.xcconfig"; sourceTree = "<group>"; };
-		752FC68F2E7B2A56E9903872 /* libPods-ReactNativeBase-ReactNativeBaseTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeBase-ReactNativeBaseTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356F21AD99517003FC87E /* TheHiveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TheHiveTests.m; sourceTree = "<group>"; };
+		0B2FB079886E2E07EF52B766 /* Pods-TheHive.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive.release-staging.xcconfig"; path = "Target Support Files/Pods-TheHive/Pods-TheHive.release-staging.xcconfig"; sourceTree = "<group>"; };
+		10FA6E9C9B57BD66AF7ED892 /* Pods-TheHive-TheHiveTests.debug-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive-TheHiveTests.debug-qa.xcconfig"; path = "Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests.debug-qa.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* The Hive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "The Hive.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = TheHive/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = TheHive/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = TheHive/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = TheHive/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = TheHive/main.m; sourceTree = "<group>"; };
+		2D98FE07C6B13EC18104DEB0 /* Pods-TheHive.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive.release.xcconfig"; path = "Target Support Files/Pods-TheHive/Pods-TheHive.release.xcconfig"; sourceTree = "<group>"; };
+		4088188EB0721E64B5210F85 /* Pods-TheHive.release-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive.release-develop.xcconfig"; path = "Target Support Files/Pods-TheHive/Pods-TheHive.release-develop.xcconfig"; sourceTree = "<group>"; };
+		423F6AAA2888EE8900927F6A /* BootSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = BootSplash.storyboard; path = TheHive/BootSplash.storyboard; sourceTree = "<group>"; };
+		58F5C8775B6DCB2FF489DAA4 /* Pods-TheHive-TheHiveTests.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive-TheHiveTests.debug-staging.xcconfig"; path = "Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests.debug-staging.xcconfig"; sourceTree = "<group>"; };
+		5CDA9629E36EA1F3653DB76B /* Pods-TheHive.debug-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive.debug-develop.xcconfig"; path = "Target Support Files/Pods-TheHive/Pods-TheHive.debug-develop.xcconfig"; sourceTree = "<group>"; };
+		6E7163E37D59D8272B457BE3 /* Pods-TheHive-TheHiveTests.release-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive-TheHiveTests.release-develop.xcconfig"; path = "Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests.release-develop.xcconfig"; sourceTree = "<group>"; };
+		752FC68F2E7B2A56E9903872 /* libPods-TheHive-TheHiveTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheHive-TheHiveTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DA0F89C28753F1D00FBDAD7 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
-		A3C6EE425C6ED4821CD75913 /* Pods-ReactNativeBase-ReactNativeBaseTests.release-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase-ReactNativeBaseTests.release-qa.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests.release-qa.xcconfig"; sourceTree = "<group>"; };
-		B1478BB1924F79D4BF5041AD /* libPods-ReactNativeBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactNativeBase.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5DCD0C2CD7A4B7B8A87983A /* Pods-ReactNativeBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase.debug.xcconfig"; sourceTree = "<group>"; };
-		C7A30F87ECB61AF77FE26C5E /* Pods-ReactNativeBase-ReactNativeBaseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase-ReactNativeBaseTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C97DED9F85EB1229B530B897 /* Pods-ReactNativeBase.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase.debug-staging.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase.debug-staging.xcconfig"; sourceTree = "<group>"; };
-		CC1AD22F0BEECFD57F17646D /* Pods-ReactNativeBase-ReactNativeBaseTests.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase-ReactNativeBaseTests.release-staging.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests.release-staging.xcconfig"; sourceTree = "<group>"; };
-		CF36C667D69068A63B280F67 /* Pods-ReactNativeBase.release-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase.release-qa.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase.release-qa.xcconfig"; sourceTree = "<group>"; };
-		D859135CC0729FDFB486DC51 /* Pods-ReactNativeBase-ReactNativeBaseTests.debug-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase-ReactNativeBaseTests.debug-develop.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests.debug-develop.xcconfig"; sourceTree = "<group>"; };
+		A3C6EE425C6ED4821CD75913 /* Pods-TheHive-TheHiveTests.release-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive-TheHiveTests.release-qa.xcconfig"; path = "Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests.release-qa.xcconfig"; sourceTree = "<group>"; };
+		B1478BB1924F79D4BF5041AD /* libPods-TheHive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TheHive.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DCD0C2CD7A4B7B8A87983A /* Pods-TheHive.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive.debug.xcconfig"; path = "Target Support Files/Pods-TheHive/Pods-TheHive.debug.xcconfig"; sourceTree = "<group>"; };
+		C7A30F87ECB61AF77FE26C5E /* Pods-TheHive-TheHiveTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive-TheHiveTests.debug.xcconfig"; path = "Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C97DED9F85EB1229B530B897 /* Pods-TheHive.debug-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive.debug-staging.xcconfig"; path = "Target Support Files/Pods-TheHive/Pods-TheHive.debug-staging.xcconfig"; sourceTree = "<group>"; };
+		CC1AD22F0BEECFD57F17646D /* Pods-TheHive-TheHiveTests.release-staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive-TheHiveTests.release-staging.xcconfig"; path = "Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests.release-staging.xcconfig"; sourceTree = "<group>"; };
+		CF36C667D69068A63B280F67 /* Pods-TheHive.release-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive.release-qa.xcconfig"; path = "Target Support Files/Pods-TheHive/Pods-TheHive.release-qa.xcconfig"; sourceTree = "<group>"; };
+		D859135CC0729FDFB486DC51 /* Pods-TheHive-TheHiveTests.debug-develop.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive-TheHiveTests.debug-develop.xcconfig"; path = "Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests.debug-develop.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F451C5B9F8E4F7FD419ADE72 /* Pods-ReactNativeBase.debug-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase.debug-qa.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase.debug-qa.xcconfig"; sourceTree = "<group>"; };
-		FFBEB644F3BABC5681DBF594 /* Pods-ReactNativeBase-ReactNativeBaseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactNativeBase-ReactNativeBaseTests.release.xcconfig"; path = "Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests.release.xcconfig"; sourceTree = "<group>"; };
+		F451C5B9F8E4F7FD419ADE72 /* Pods-TheHive.debug-qa.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive.debug-qa.xcconfig"; path = "Target Support Files/Pods-TheHive/Pods-TheHive.debug-qa.xcconfig"; sourceTree = "<group>"; };
+		FFBEB644F3BABC5681DBF594 /* Pods-TheHive-TheHiveTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TheHive-TheHiveTests.release.xcconfig"; path = "Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E5DB18E2600904217A10F528 /* libPods-ReactNativeBase-ReactNativeBaseTests.a in Frameworks */,
+				E5DB18E2600904217A10F528 /* libPods-TheHive-TheHiveTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,20 +72,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BD1A54057EA747B02F2880A /* libPods-ReactNativeBase.a in Frameworks */,
+				7BD1A54057EA747B02F2880A /* libPods-TheHive.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* ReactNativeBaseTests */ = {
+		00E356EF1AD99517003FC87E /* TheHiveTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* ReactNativeBaseTests.m */,
+				00E356F21AD99517003FC87E /* TheHiveTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = ReactNativeBaseTests;
+			path = TheHiveTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -96,7 +96,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* ReactNativeBase */ = {
+		13B07FAE1A68108700A75B9A /* TheHive */ = {
 			isa = PBXGroup;
 			children = (
 				423F6AAA2888EE8900927F6A /* BootSplash.storyboard */,
@@ -106,15 +106,15 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = ReactNativeBase;
+			name = TheHive;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				B1478BB1924F79D4BF5041AD /* libPods-ReactNativeBase.a */,
-				752FC68F2E7B2A56E9903872 /* libPods-ReactNativeBase-ReactNativeBaseTests.a */,
+				B1478BB1924F79D4BF5041AD /* libPods-TheHive.a */,
+				752FC68F2E7B2A56E9903872 /* libPods-TheHive-TheHiveTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				8DA0F89C28753F1D00FBDAD7 /* Config.xcconfig */,
-				13B07FAE1A68108700A75B9A /* ReactNativeBase */,
+				13B07FAE1A68108700A75B9A /* TheHive */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* ReactNativeBaseTests */,
+				00E356EF1AD99517003FC87E /* TheHiveTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -145,8 +145,8 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* ReactNativeBase.app */,
-				00E356EE1AD99517003FC87E /* ReactNativeBaseTests.xctest */,
+				13B07F961A680F5B00A75B9A /* The Hive.app */,
+				00E356EE1AD99517003FC87E /* TheHiveTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,22 +154,22 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B5DCD0C2CD7A4B7B8A87983A /* Pods-ReactNativeBase.debug.xcconfig */,
-				5CDA9629E36EA1F3653DB76B /* Pods-ReactNativeBase.debug-develop.xcconfig */,
-				C97DED9F85EB1229B530B897 /* Pods-ReactNativeBase.debug-staging.xcconfig */,
-				F451C5B9F8E4F7FD419ADE72 /* Pods-ReactNativeBase.debug-qa.xcconfig */,
-				2D98FE07C6B13EC18104DEB0 /* Pods-ReactNativeBase.release.xcconfig */,
-				4088188EB0721E64B5210F85 /* Pods-ReactNativeBase.release-develop.xcconfig */,
-				0B2FB079886E2E07EF52B766 /* Pods-ReactNativeBase.release-staging.xcconfig */,
-				CF36C667D69068A63B280F67 /* Pods-ReactNativeBase.release-qa.xcconfig */,
-				C7A30F87ECB61AF77FE26C5E /* Pods-ReactNativeBase-ReactNativeBaseTests.debug.xcconfig */,
-				D859135CC0729FDFB486DC51 /* Pods-ReactNativeBase-ReactNativeBaseTests.debug-develop.xcconfig */,
-				58F5C8775B6DCB2FF489DAA4 /* Pods-ReactNativeBase-ReactNativeBaseTests.debug-staging.xcconfig */,
-				10FA6E9C9B57BD66AF7ED892 /* Pods-ReactNativeBase-ReactNativeBaseTests.debug-qa.xcconfig */,
-				FFBEB644F3BABC5681DBF594 /* Pods-ReactNativeBase-ReactNativeBaseTests.release.xcconfig */,
-				6E7163E37D59D8272B457BE3 /* Pods-ReactNativeBase-ReactNativeBaseTests.release-develop.xcconfig */,
-				CC1AD22F0BEECFD57F17646D /* Pods-ReactNativeBase-ReactNativeBaseTests.release-staging.xcconfig */,
-				A3C6EE425C6ED4821CD75913 /* Pods-ReactNativeBase-ReactNativeBaseTests.release-qa.xcconfig */,
+				B5DCD0C2CD7A4B7B8A87983A /* Pods-TheHive.debug.xcconfig */,
+				5CDA9629E36EA1F3653DB76B /* Pods-TheHive.debug-develop.xcconfig */,
+				C97DED9F85EB1229B530B897 /* Pods-TheHive.debug-staging.xcconfig */,
+				F451C5B9F8E4F7FD419ADE72 /* Pods-TheHive.debug-qa.xcconfig */,
+				2D98FE07C6B13EC18104DEB0 /* Pods-TheHive.release.xcconfig */,
+				4088188EB0721E64B5210F85 /* Pods-TheHive.release-develop.xcconfig */,
+				0B2FB079886E2E07EF52B766 /* Pods-TheHive.release-staging.xcconfig */,
+				CF36C667D69068A63B280F67 /* Pods-TheHive.release-qa.xcconfig */,
+				C7A30F87ECB61AF77FE26C5E /* Pods-TheHive-TheHiveTests.debug.xcconfig */,
+				D859135CC0729FDFB486DC51 /* Pods-TheHive-TheHiveTests.debug-develop.xcconfig */,
+				58F5C8775B6DCB2FF489DAA4 /* Pods-TheHive-TheHiveTests.debug-staging.xcconfig */,
+				10FA6E9C9B57BD66AF7ED892 /* Pods-TheHive-TheHiveTests.debug-qa.xcconfig */,
+				FFBEB644F3BABC5681DBF594 /* Pods-TheHive-TheHiveTests.release.xcconfig */,
+				6E7163E37D59D8272B457BE3 /* Pods-TheHive-TheHiveTests.release-develop.xcconfig */,
+				CC1AD22F0BEECFD57F17646D /* Pods-TheHive-TheHiveTests.release-staging.xcconfig */,
+				A3C6EE425C6ED4821CD75913 /* Pods-TheHive-TheHiveTests.release-qa.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -177,9 +177,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* ReactNativeBaseTests */ = {
+		00E356ED1AD99517003FC87E /* TheHiveTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactNativeBaseTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TheHiveTests" */;
 			buildPhases = (
 				C09DE9D89F64AFC639D8D1AE /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -193,14 +193,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = ReactNativeBaseTests;
-			productName = ReactNativeBaseTests;
-			productReference = 00E356EE1AD99517003FC87E /* ReactNativeBaseTests.xctest */;
+			name = TheHiveTests;
+			productName = TheHiveTests;
+			productReference = 00E356EE1AD99517003FC87E /* TheHiveTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* ReactNativeBase */ = {
+		13B07F861A680F5B00A75B9A /* TheHive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeBase" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TheHive" */;
 			buildPhases = (
 				D61C9DC15EB511D18DA04762 /* [CP] Check Pods Manifest.lock */,
 				8DA0F89D2875429600FBDAD7 /* Setting Environment variables */,
@@ -216,9 +216,9 @@
 			);
 			dependencies = (
 			);
-			name = ReactNativeBase;
-			productName = ReactNativeBase;
-			productReference = 13B07F961A680F5B00A75B9A /* ReactNativeBase.app */;
+			name = TheHive;
+			productName = TheHive;
+			productReference = 13B07F961A680F5B00A75B9A /* The Hive.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +238,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativeBase" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TheHive" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -251,8 +251,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* ReactNativeBase */,
-				00E356ED1AD99517003FC87E /* ReactNativeBaseTests */,
+				13B07F861A680F5B00A75B9A /* TheHive */,
+				00E356ED1AD99517003FC87E /* TheHiveTests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,15 +297,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6E1F3497EDF92DD352175F7A /* [CP] Copy Pods Resources */ = {
@@ -314,15 +314,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TheHive/Pods-TheHive-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TheHive/Pods-TheHive-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheHive/Pods-TheHive-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8DA0F89D2875429600FBDAD7 /* Setting Environment variables */ = {
@@ -350,15 +350,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TheHive/Pods-TheHive-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TheHive/Pods-TheHive-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeBase/Pods-ReactNativeBase-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheHive/Pods-TheHive-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C09DE9D89F64AFC639D8D1AE /* [CP] Check Pods Manifest.lock */ = {
@@ -376,7 +376,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactNativeBase-ReactNativeBaseTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TheHive-TheHiveTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -389,15 +389,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReactNativeBase-ReactNativeBaseTests/Pods-ReactNativeBase-ReactNativeBaseTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TheHive-TheHiveTests/Pods-TheHive-TheHiveTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D61C9DC15EB511D18DA04762 /* [CP] Check Pods Manifest.lock */ = {
@@ -415,7 +415,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReactNativeBase-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-TheHive-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -448,7 +448,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* ReactNativeBaseTests.m in Sources */,
+				00E356F31AD99517003FC87E /* TheHiveTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +466,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* ReactNativeBase */;
+			target = 13B07F861A680F5B00A75B9A /* TheHive */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -474,14 +474,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7A30F87ECB61AF77FE26C5E /* Pods-ReactNativeBase-ReactNativeBaseTests.debug.xcconfig */;
+			baseConfigurationReference = C7A30F87ECB61AF77FE26C5E /* Pods-TheHive-TheHiveTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ReactNativeBaseTests/Info.plist;
+				INFOPLIST_FILE = TheHiveTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -495,17 +495,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeBase.app/ReactNativeBase";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheHive.app/TheHive";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FFBEB644F3BABC5681DBF594 /* Pods-ReactNativeBase-ReactNativeBaseTests.release.xcconfig */;
+			baseConfigurationReference = FFBEB644F3BABC5681DBF594 /* Pods-TheHive-TheHiveTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = ReactNativeBaseTests/Info.plist;
+				INFOPLIST_FILE = TheHiveTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -519,13 +519,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeBase.app/ReactNativeBase";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheHive.app/TheHive";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B5DCD0C2CD7A4B7B8A87983A /* Pods-ReactNativeBase.debug.xcconfig */;
+			baseConfigurationReference = B5DCD0C2CD7A4B7B8A87983A /* Pods-TheHive.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -534,7 +534,8 @@
 				DEVELOPMENT_TEAM = WNU857N39T;
 				ENABLE_BITCODE = NO;
 				ENVIRONMENT_FILE = .env.prod;
-				INFOPLIST_FILE = ReactNativeBase/Info.plist;
+				INFOPLIST_FILE = TheHive/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Hive";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -545,8 +546,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.react-native-base";
-				PRODUCT_NAME = ReactNativeBase;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.the-hive";
+				PRODUCT_NAME = "The Hive";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -555,7 +556,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2D98FE07C6B13EC18104DEB0 /* Pods-ReactNativeBase.release.xcconfig */;
+			baseConfigurationReference = 2D98FE07C6B13EC18104DEB0 /* Pods-TheHive.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -563,7 +564,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WNU857N39T;
 				ENVIRONMENT_FILE = .env.prod;
-				INFOPLIST_FILE = ReactNativeBase/Info.plist;
+				INFOPLIST_FILE = TheHive/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Hive";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -574,8 +576,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.react-native-base";
-				PRODUCT_NAME = ReactNativeBase;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.the-hive";
+				PRODUCT_NAME = "The Hive";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -798,7 +800,7 @@
 		};
 		8DA0F88B2875292300FBDAD7 /* Debug-QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F451C5B9F8E4F7FD419ADE72 /* Pods-ReactNativeBase.debug-qa.xcconfig */;
+			baseConfigurationReference = F451C5B9F8E4F7FD419ADE72 /* Pods-TheHive.debug-qa.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-QA";
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -807,7 +809,8 @@
 				DEVELOPMENT_TEAM = WNU857N39T;
 				ENABLE_BITCODE = NO;
 				ENVIRONMENT_FILE = .env.qa;
-				INFOPLIST_FILE = ReactNativeBase/Info.plist;
+				INFOPLIST_FILE = TheHive/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Hive - QA";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -818,8 +821,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.react-native-base.qa";
-				PRODUCT_NAME = "RNBase - QA";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.the-hive.qa";
+				PRODUCT_NAME = "The Hive - QA";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -828,14 +831,14 @@
 		};
 		8DA0F88C2875292300FBDAD7 /* Debug-QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10FA6E9C9B57BD66AF7ED892 /* Pods-ReactNativeBase-ReactNativeBaseTests.debug-qa.xcconfig */;
+			baseConfigurationReference = 10FA6E9C9B57BD66AF7ED892 /* Pods-TheHive-TheHiveTests.debug-qa.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ReactNativeBaseTests/Info.plist;
+				INFOPLIST_FILE = TheHiveTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -849,7 +852,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeBase.app/ReactNativeBase";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheHive.app/TheHive";
 			};
 			name = "Debug-QA";
 		};
@@ -929,7 +932,7 @@
 		};
 		8DA0F88E2875292B00FBDAD7 /* Debug-Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C97DED9F85EB1229B530B897 /* Pods-ReactNativeBase.debug-staging.xcconfig */;
+			baseConfigurationReference = C97DED9F85EB1229B530B897 /* Pods-TheHive.debug-staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Staging";
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -938,7 +941,8 @@
 				DEVELOPMENT_TEAM = WNU857N39T;
 				ENABLE_BITCODE = NO;
 				ENVIRONMENT_FILE = .env.staging;
-				INFOPLIST_FILE = ReactNativeBase/Info.plist;
+				INFOPLIST_FILE = TheHive/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Hive - Staging";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -949,8 +953,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.react-native-base.staging";
-				PRODUCT_NAME = "RNBase - Staging";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.the-hive.staging";
+				PRODUCT_NAME = "The Hive - Staging";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -959,14 +963,14 @@
 		};
 		8DA0F88F2875292B00FBDAD7 /* Debug-Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58F5C8775B6DCB2FF489DAA4 /* Pods-ReactNativeBase-ReactNativeBaseTests.debug-staging.xcconfig */;
+			baseConfigurationReference = 58F5C8775B6DCB2FF489DAA4 /* Pods-TheHive-TheHiveTests.debug-staging.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ReactNativeBaseTests/Info.plist;
+				INFOPLIST_FILE = TheHiveTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -980,7 +984,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeBase.app/ReactNativeBase";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheHive.app/TheHive";
 			};
 			name = "Debug-Staging";
 		};
@@ -1060,7 +1064,7 @@
 		};
 		8DA0F8912875293100FBDAD7 /* Debug-Develop */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5CDA9629E36EA1F3653DB76B /* Pods-ReactNativeBase.debug-develop.xcconfig */;
+			baseConfigurationReference = 5CDA9629E36EA1F3653DB76B /* Pods-TheHive.debug-develop.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Develop";
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -1069,7 +1073,8 @@
 				DEVELOPMENT_TEAM = WNU857N39T;
 				ENABLE_BITCODE = NO;
 				ENVIRONMENT_FILE = .env.dev;
-				INFOPLIST_FILE = ReactNativeBase/Info.plist;
+				INFOPLIST_FILE = TheHive/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Hive - Dev";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1080,8 +1085,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.react-native-base.dev";
-				PRODUCT_NAME = "RNBase - Develop";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.the-hive.dev";
+				PRODUCT_NAME = "The Hive - Dev";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1090,14 +1095,14 @@
 		};
 		8DA0F8922875293100FBDAD7 /* Debug-Develop */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D859135CC0729FDFB486DC51 /* Pods-ReactNativeBase-ReactNativeBaseTests.debug-develop.xcconfig */;
+			baseConfigurationReference = D859135CC0729FDFB486DC51 /* Pods-TheHive-TheHiveTests.debug-develop.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = ReactNativeBaseTests/Info.plist;
+				INFOPLIST_FILE = TheHiveTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1111,7 +1116,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeBase.app/ReactNativeBase";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheHive.app/TheHive";
 			};
 			name = "Debug-Develop";
 		};
@@ -1184,7 +1189,7 @@
 		};
 		8DA0F8942875293F00FBDAD7 /* Release-QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF36C667D69068A63B280F67 /* Pods-ReactNativeBase.release-qa.xcconfig */;
+			baseConfigurationReference = CF36C667D69068A63B280F67 /* Pods-TheHive.release-qa.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-QA";
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -1192,7 +1197,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WNU857N39T;
 				ENVIRONMENT_FILE = .env.qa;
-				INFOPLIST_FILE = ReactNativeBase/Info.plist;
+				INFOPLIST_FILE = TheHive/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Hive - QA";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1203,8 +1209,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.react-native-base.qa";
-				PRODUCT_NAME = "RNBase - QA";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.the-hive.qa";
+				PRODUCT_NAME = "The Hive - QA";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1212,11 +1218,11 @@
 		};
 		8DA0F8952875293F00FBDAD7 /* Release-QA */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3C6EE425C6ED4821CD75913 /* Pods-ReactNativeBase-ReactNativeBaseTests.release-qa.xcconfig */;
+			baseConfigurationReference = A3C6EE425C6ED4821CD75913 /* Pods-TheHive-TheHiveTests.release-qa.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = ReactNativeBaseTests/Info.plist;
+				INFOPLIST_FILE = TheHiveTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1230,7 +1236,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeBase.app/ReactNativeBase";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheHive.app/TheHive";
 			};
 			name = "Release-QA";
 		};
@@ -1303,7 +1309,7 @@
 		};
 		8DA0F8972875294600FBDAD7 /* Release-Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B2FB079886E2E07EF52B766 /* Pods-ReactNativeBase.release-staging.xcconfig */;
+			baseConfigurationReference = 0B2FB079886E2E07EF52B766 /* Pods-TheHive.release-staging.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Staging";
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -1311,7 +1317,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WNU857N39T;
 				ENVIRONMENT_FILE = .env.staging;
-				INFOPLIST_FILE = ReactNativeBase/Info.plist;
+				INFOPLIST_FILE = TheHive/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Hive - Staging";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1322,8 +1329,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.react-native-base.staging";
-				PRODUCT_NAME = "RNBase - Staging";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.the-hive.staging";
+				PRODUCT_NAME = "The Hive - Staging";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1331,11 +1338,11 @@
 		};
 		8DA0F8982875294600FBDAD7 /* Release-Staging */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC1AD22F0BEECFD57F17646D /* Pods-ReactNativeBase-ReactNativeBaseTests.release-staging.xcconfig */;
+			baseConfigurationReference = CC1AD22F0BEECFD57F17646D /* Pods-TheHive-TheHiveTests.release-staging.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = ReactNativeBaseTests/Info.plist;
+				INFOPLIST_FILE = TheHiveTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1349,7 +1356,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeBase.app/ReactNativeBase";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheHive.app/TheHive";
 			};
 			name = "Release-Staging";
 		};
@@ -1422,7 +1429,7 @@
 		};
 		8DA0F89A2875296000FBDAD7 /* Release-Develop */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4088188EB0721E64B5210F85 /* Pods-ReactNativeBase.release-develop.xcconfig */;
+			baseConfigurationReference = 4088188EB0721E64B5210F85 /* Pods-TheHive.release-develop.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Develop";
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -1430,7 +1437,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WNU857N39T;
 				ENVIRONMENT_FILE = .env.dev;
-				INFOPLIST_FILE = ReactNativeBase/Info.plist;
+				INFOPLIST_FILE = TheHive/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "The Hive - Dev";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1441,8 +1449,8 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.react-native-base.dev";
-				PRODUCT_NAME = "RNBase - Develop";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rootstrap.the-hive.dev";
+				PRODUCT_NAME = "The Hive - Dev";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -1450,11 +1458,11 @@
 		};
 		8DA0F89B2875296000FBDAD7 /* Release-Develop */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6E7163E37D59D8272B457BE3 /* Pods-ReactNativeBase-ReactNativeBaseTests.release-develop.xcconfig */;
+			baseConfigurationReference = 6E7163E37D59D8272B457BE3 /* Pods-TheHive-TheHiveTests.release-develop.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = ReactNativeBaseTests/Info.plist;
+				INFOPLIST_FILE = TheHiveTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1468,14 +1476,14 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeBase.app/ReactNativeBase";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TheHive.app/TheHive";
 			};
 			name = "Release-Develop";
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "ReactNativeBaseTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "TheHiveTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1490,7 +1498,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReactNativeBase" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "TheHive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1505,7 +1513,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReactNativeBase" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "TheHive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

@@ -140,13 +140,13 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
     defaultConfig {
-        applicationId "com.reactnativebase"
+        applicationId "com.thehive"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0.0"
         buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", isNewArchitectureEnabled().toString()
-        resValue "string", "build_config_package", "com.reactnativebase"
+        resValue "string", "build_config_package", "com.thehive"
 
         if (isNewArchitectureEnabled()) {
             // We configure the NDK build only if you decide to opt-in for the New Architecture.
@@ -163,7 +163,7 @@ android {
                     cppFlags "-std=c++17"
                     // Make sure this target name is the same you specify inside the
                     // src/main/jni/Android.mk file for the `LOCAL_MODULE` variable.
-                    targets "reactnativebase_appmodules"
+                    targets "thehive_appmodules"
                 }
             }
         }
@@ -244,21 +244,21 @@ android {
         prod {
             minSdkVersion rootProject.ext.minSdkVersion
             targetSdkVersion rootProject.ext.targetSdkVersion
-            resValue "string", "app_name", "ReactNativeBase"
+            resValue "string", "app_name", "The Hive"
         }
         develop {
             applicationIdSuffix '.dev'
             minSdkVersion rootProject.ext.minSdkVersion
             targetSdkVersion rootProject.ext.targetSdkVersion
             versionNameSuffix "- Develop"
-            resValue "string", "app_name", "RNBase - Develop"
+            resValue "string", "app_name", "The Hive - Dev"
         }
         qa {
             applicationIdSuffix '.qa'
             minSdkVersion rootProject.ext.minSdkVersion
             targetSdkVersion rootProject.ext.targetSdkVersion
             versionNameSuffix "- QA"
-            resValue "string", "app_name", "RNBase - QA"
+            resValue "string", "app_name", "The Hive - QA"
         versionCode 1
         versionName "1.0"
         }
@@ -267,7 +267,7 @@ android {
             minSdkVersion rootProject.ext.minSdkVersion
             targetSdkVersion rootProject.ext.targetSdkVersion
             versionNameSuffix "- Staging"
-            resValue "string", "app_name", "RNBase - Staging"
+            resValue "string", "app_name", "The Hive - Staging"
         }
     }
 
