@@ -40,6 +40,7 @@
     "prettier": "prettier --write 'src/**/*.{js,jsx,ts,tsx}'"
   },
   "dependencies": {
+    "@react-native-firebase/app": "^17.3.1",
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.9.1",
     "@tanstack/react-query": "^4.2.1",
@@ -96,8 +97,8 @@
   },
   "jest": {
     "preset": "react-native",
-    "testPathIgnorePatterns" : [
-      "<rootDir>/.fttemplates/" 
+    "testPathIgnorePatterns": [
+      "<rootDir>/.fttemplates/"
     ],
     "moduleFileExtensions": [
       "ts",
@@ -120,6 +121,10 @@
       "^.+\\.jsx?$": "babel-jest"
     },
     "collectCoverage": true,
-    "coverageReporters": ["lcov", "json", "html"]
+    "coverageReporters": [
+      "lcov",
+      "json",
+      "html"
+    ]
   }
 }

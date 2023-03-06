@@ -61,7 +61,7 @@ buck-out/
 /ios/Pods/
 /vendor/bundle/
 
-#Jest
+# Jest
 /coverage/
 
 # Env
@@ -72,5 +72,13 @@ buck-out/
 # react-native-config codegen
 ios/tmp.xcconfig
 
-#Expo
+# Expo
 .expo
+
+# Firebase
+ios/TheHive/GoogleService
+ios/TheHive/GoogleService-Info.plist
+android/app/src/develop/google-services.json
+android/app/src/qa/google-services.json
+android/app/src/staging/google-services.json
+android/app/src/prod/google-services.json
