@@ -1,6 +1,9 @@
-import Button from 'common/Button';
 import React from 'react';
-import { SafeAreaView, StatusBar, useColorScheme } from 'react-native';
+import { StatusBar, useColorScheme } from 'react-native';
+
+import { SafeAreaView } from 'dripsy';
+
+import Button from 'common/Button';
 
 import styles from './styles';
 import { WelcomePropTypes } from './types';
@@ -12,7 +15,7 @@ const WelcomeScreen: React.FunctionComponent<WelcomePropTypes> = ({ navigation: 
   const onSignUpPress = () => navigate('SignUp');
 
   return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView sx={styles.container}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <Button
         testID="dummy-button"

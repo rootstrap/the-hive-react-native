@@ -45,6 +45,7 @@
     "@react-navigation/native-stack": "^6.9.1",
     "@tanstack/react-query": "^4.2.1",
     "axios": "^0.27.2",
+    "dripsy": "^3.10.0",
     "humps": "^2.0.1",
     "react": "17.0.2",
     "react-native": "0.68.0",

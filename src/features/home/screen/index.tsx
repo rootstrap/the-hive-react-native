@@ -1,12 +1,14 @@
 import React from 'react';
-import { SafeAreaView, Text } from 'react-native';
+
+import { Text } from 'design-system';
+import { SafeAreaView } from 'dripsy';
 
 import styles from './styles';
 import type { HomePropTypes } from './types';
 
 const HomeScreen: React.FunctionComponent<HomePropTypes> = () => (
-  <SafeAreaView style={styles.container}>
-    <Text accessibilityRole={'text'}>Home Screen</Text>
+  <SafeAreaView sx={styles.container}>
+    <Text accessibilityRole="text">Home Screen</Text>
   </SafeAreaView>
 );
 

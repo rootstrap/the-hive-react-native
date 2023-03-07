@@ -16,6 +16,13 @@ module.exports = {
           '.ts',
           '.tsx',
         ],
+        alias: {
+          common: './src/common',
+          'design-system': './src/design-system',
+          features: './src/features',
+          hooks: './src/hooks',
+          navigation: './src/navigation',
+        },
       },
     ],
   ],
