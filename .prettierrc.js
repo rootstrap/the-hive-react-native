@@ -7,13 +7,17 @@ module.exports = {
   printWidth: 100,
 
   importOrder: [
+    '^(react(.*)$)',
     '^@(.*)/(.*)$',
+    '<THIRD_PARTY_MODULES>',
+    '^common/(.*)$',
     '^components/(.*)$',
     '^constants/(.*)$',
+    '^design-system/(.*)$',
+    '^features/(.*)$',
     '^hooks/(.*)$',
     '^navigation',
     '^navigation/(.*)$',
-    '^features/(.*)$',
     '^network/(.*)$',
     '^storage/(.*)$',
     '^[./*]',

@@ -1,5 +1,6 @@
-import axios from 'axios';
 import Config from 'react-native-config';
+
+import axios from 'axios';
 
 const APPLICATION_JSON = 'application/json';
 export const MULTIPART_FORM_DATA = 'multipart/form-data';

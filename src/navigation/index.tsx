@@ -23,9 +23,9 @@ const NavigationStack: React.FunctionComponent = () => {
         headerShown: false,
       }}>
       {!user ? (
-        <AppStack.Screen name={'Auth'} component={AuthStack} />
+        <AppStack.Screen name="Auth" component={AuthStack} />
       ) : (
-        <AppStack.Screen name={'Main'} component={MainStack} />
+        <AppStack.Screen name="Main" component={MainStack} />
       )}
     </AppStack.Navigator>
   );

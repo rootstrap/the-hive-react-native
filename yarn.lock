@@ -837,6 +837,17 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@dripsy/core@^3.10.0":
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/@dripsy/core/-/core-3.10.0.tgz#3effb75b5e3d9252a21d0e1da538f1bff3db5de5"
+  integrity sha512-JcQ/kP+NiszmjQaCK50hbyos/OTjLlwnAjpSMois+QK+h97nGjEloAg9CfJ9E1OX9E0jyF4YswSvLoiAdbe/zw==
+  dependencies:
+    "@expo/html-elements" "^0.2.0"
+    "@react-native-community/hooks" "^2.6.0"
+    "@theme-ui/css" "^0.4.0-rc.1"
+    stable-hash "^0.0.2"
+    ts-toolbelt "^9.6.0"
+
 "@eslint/eslintrc@^1.3.3":
   version "1.3.3"
   resolved "https://registry.npmjs.org/@eslint/eslintrc/-/eslintrc-1.3.3.tgz"
@@ -877,6 +888,11 @@
   version "47.0.0"
   resolved "https://registry.yarnpkg.com/@expo/config-types/-/config-types-47.0.0.tgz#99eeabe0bba7a776e0f252b78beb0c574692c38d"
   integrity sha512-r0pWfuhkv7KIcXMUiNACJmJKKwlTBGMw9VZHNdppS8/0Nve8HZMTkNRFQzTHW1uH3pBj8jEXpyw/2vSWDHex9g==
+
+"@expo/html-elements@^0.2.0":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@expo/html-elements/-/html-elements-0.2.2.tgz#d4d361df6c4089d67cc2fd98d34a5347ac4c1a5d"
+  integrity sha512-hMS/5UfBgusKo5K0kpXdrddkxBg9LaJ8Dnijxats+7Uj0Mrk+NaRx3jOUsHTzd7pAroeqx5WGwzJ7wppsksBVA==
 
 "@expo/json-file@8.2.36":
   version "8.2.36"
@@ -1688,6 +1704,11 @@
   resolved "https://registry.npmjs.org/@react-native-community/eslint-plugin/-/eslint-plugin-1.3.0.tgz"
   integrity sha512-+zDZ20NUnSWghj7Ku5aFphMzuM9JulqCW+aPXT6IfIXFbb8tzYTTOSeRFOtuekJ99ibW2fUCSsjuKNlwDIbHFg==
 
+"@react-native-community/hooks@^2.6.0":
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/@react-native-community/hooks/-/hooks-2.8.1.tgz#6e785431db49318048fdd14b601998437b6cc200"
+  integrity sha512-DCmCIC0Gn9m6K0Mlg2MwNmTxMEpBu5lTLsI6b/XUAv/vLGa6o+X7RhCai4FWeqkjCU36+ZOwaLzDo4NBWMXaoQ==
+
 "@react-native-firebase/app@^17.3.1":
   version "17.3.1"
   resolved "https://registry.yarnpkg.com/@react-native-firebase/app/-/app-17.3.1.tgz#2ceca920fda786b6a32abf77c3fa9459f22e95e9"
@@ -1814,6 +1835,13 @@
   integrity sha512-Pw1T3QoRyoPlnbDPI7pJCRChX/HquEVk6b9XfUuO/LrLJpqAOtZQDYz67eVJfVlhIlTu7hesm57ikIabOWKSlg==
   dependencies:
     pretty-format "^29.0.0"
+
+"@theme-ui/css@^0.4.0-rc.1":
+  version "0.4.0-rc.13"
+  resolved "https://registry.yarnpkg.com/@theme-ui/css/-/css-0.4.0-rc.13.tgz#ffe585bebe4fc91fea2935bb6beb40f50c6a7cf0"
+  integrity sha512-YEO462Ia26T+i/6p/B4EJt/p3qJanPsSYpRP7MK4GchF/LbuHi0MS+zc4TpctIuIqpXgQR3w75b6xJZG1Oqn1Q==
+  dependencies:
+    csstype "^2.5.7"
 
 "@tootallnate/once@1":
   version "1.1.2"
@@ -3172,6 +3200,11 @@ cssstyle@^2.3.0:
   dependencies:
     cssom "~0.3.6"
 
+csstype@^2.5.7:
+  version "2.6.21"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.21.tgz#2efb85b7cc55c80017c66a5ad7cbd931fda3a90e"
+  integrity sha512-Z1PhmomIfypOpoMjRQB70jfvy/wxT50qW08YXO5lMIJkrdq4yOTR+AW7FqutScmB9NkLwxo+jU+kZLbofZZq/w==
+
 csstype@^3.0.2:
   version "3.1.1"
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.1.tgz"
@@ -3365,6 +3398,13 @@ domexception@^2.0.1:
   integrity sha512-yxJ2mFy/sibVQlu5qHjOkf9J3K6zgmCxgJ94u2EdvDOV09H+32LtRswEcUsmUWN72pVLOEnTSRaIVVzVQgS0dg==
   dependencies:
     webidl-conversions "^5.0.0"
+
+dripsy@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/dripsy/-/dripsy-3.10.0.tgz#ab5d782efc42e43175b0fbfc1c0e35b955c3e2be"
+  integrity sha512-DjjWhngv3IehRFdqa0OlgkzECm2rai2MuwMZWOlCiOgzw6HSnD2DW/bIii32kxW6Fhbc+UBFyyvOnXp2173nDQ==
+  dependencies:
+    "@dripsy/core" "^3.10.0"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -7811,6 +7851,11 @@ sprintf-js@~1.0.2:
   resolved "https://registry.npmjs.org/sprintf-js/-/sprintf-js-1.0.3.tgz"
   integrity sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==
 
+stable-hash@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/stable-hash/-/stable-hash-0.0.2.tgz#a909deaa5b9d430b100ca0a10132a533f2665e94"
+  integrity sha512-tPwQ3c1rLIwbJpq59duoznegEbmgfV630C2n4R4G96LKBFljgK8j+O9AxjqB6cAzu4gE7s4pByrLWtZel8E+Mg==
+
 stack-utils@^2.0.2:
   version "2.0.6"
   resolved "https://registry.npmjs.org/stack-utils/-/stack-utils-2.0.6.tgz"
@@ -8162,6 +8207,11 @@ tr46@~0.0.3:
   version "0.0.3"
   resolved "https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz"
   integrity sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==
+
+ts-toolbelt@^9.6.0:
+  version "9.6.0"
+  resolved "https://registry.yarnpkg.com/ts-toolbelt/-/ts-toolbelt-9.6.0.tgz#50a25426cfed500d4a09bd1b3afb6f28879edfd5"
+  integrity sha512-nsZd8ZeNUzukXPlJmTBwUAuABDe/9qtVDelJeT/qW0ow3ZS3BsQJtNkan1802aM9Uf68/Y8ljw86Hu0h5IUW3w==
 
 tsconfig-paths@^3.14.1:
   version "3.14.1"

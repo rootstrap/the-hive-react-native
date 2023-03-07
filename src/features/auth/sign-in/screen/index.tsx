@@ -1,12 +1,13 @@
 import React from 'react';
-import { View } from 'react-native';
+
+import { View } from 'dripsy';
 
 import Logo from '../components/Logo';
 import styles from './styles';
 import { SignInPropTypes } from './types';
 
 const SignInScreen: React.FunctionComponent<SignInPropTypes> = () => (
-  <View style={styles.container}>
+  <View sx={styles.container}>
     <Logo />
   </View>
 );

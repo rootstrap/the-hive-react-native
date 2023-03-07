@@ -1,6 +1,8 @@
-import Pressable from 'common/Pressable';
 import React from 'react';
-import { Text } from 'react-native';
+
+import { Text } from 'design-system';
+
+import Pressable from 'common/Pressable';
 
 import styles from './styles';
 import { ButtonProps } from './types';
@@ -11,7 +13,7 @@ const Button: React.FunctionComponent<ButtonProps> = ({ title, disabled = false,
     disabledStyle={styles.disabledContainer}
     disabled={disabled}
     {...props}>
-    <Text style={[styles.title, disabled && styles.disabledTitle]}>{title}</Text>
+    <Text sx={{ ...styles.title, ...(disabled ? styles.disabledTitle : {}) }}>{title}</Text>
   </Pressable>
 );
 
