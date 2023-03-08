@@ -1,1 +1,2 @@
-export * from 'design-system/Text';
+export * from 'design-system/components/Button';
+export * from 'design-system/components/Text';

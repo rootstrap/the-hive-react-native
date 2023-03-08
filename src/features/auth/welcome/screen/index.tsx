@@ -1,9 +1,8 @@
 import React from 'react';
 import { StatusBar, useColorScheme } from 'react-native';
 
+import { Button } from 'design-system';
 import { SafeAreaView } from 'dripsy';
-
-import Button from 'common/Button';
 
 import styles from './styles';
 import { WelcomePropTypes } from './types';
@@ -20,14 +19,15 @@ const WelcomeScreen: React.FunctionComponent<WelcomePropTypes> = ({ navigation: 
       <Button
         testID="dummy-button"
         accessibilityState={{ disabled: false }}
-        title="Sign In"
+        label="Sign In"
         onPress={onSignInPress}
       />
       <Button
         testID="dummy-button"
         accessibilityState={{ disabled: false }}
-        title="Sign Up"
+        label="Sign Up"
         onPress={onSignUpPress}
+        variant="secondary"
       />
     </SafeAreaView>
   );
