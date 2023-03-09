@@ -8,7 +8,7 @@ type Props<T extends FieldValues> = {
 } & Omit<UseControllerProps<T>, 'name'> &
   ComponentProps<typeof Input>;
 
-const useInputWithController = <T extends FieldValues>(WrappedComponent: React.ElementType) => {
+const withControllerHOC = <T extends FieldValues>(WrappedComponent: React.ElementType) => {
   const ComponentWithController = ({ id, control, rules, defaultValue, ...props }: Props<T>) => (
     <Controller
       name={id}
@@ -29,4 +29,4 @@ const useInputWithController = <T extends FieldValues>(WrappedComponent: React.E
   return ComponentWithController;
 };
 
-export default useInputWithController;
+export default withControllerHOC;

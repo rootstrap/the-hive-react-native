@@ -18,6 +18,7 @@ module.exports = {
         ],
         alias: {
           common: './src/common',
+          constants: './src/constants',
           'design-system': './src/design-system',
           features: './src/features',
           hooks: './src/hooks',

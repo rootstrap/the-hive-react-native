@@ -18,8 +18,6 @@ const getContentStyles = ({ isInvalid, isFocused, isSuccess }: TextInputStates) 
   return {
     ...styles.content,
     borderColor: currentColor,
-    shadowColor: currentColor,
-    shadowOpacity: isInvalid || isFocused || isSuccess ? 0.5 : 0,
   };
 };
 

@@ -4,8 +4,8 @@ const styles = StyleSheet.create({
   touchableContainer: {
     alignItems: 'center',
     justifyContent: 'center',
-    minHeight: 44,
-    minWidth: 44,
+    minHeight: 40,
+    minWidth: 40,
   },
 });
 

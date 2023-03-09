@@ -1,8 +1,8 @@
-import { StyleSheet } from 'react-native';
+import { Styles } from 'dripsy';
 
 import { BLUE, GREY_01, GREY_02, WHITE } from 'constants/styles';
 
-const styles = StyleSheet.create({
+const styles = Styles.create({
   container: {
     borderRadius: 22,
     backgroundColor: BLUE,

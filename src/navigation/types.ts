@@ -1,9 +1,10 @@
 export type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 const AuthStackScreens = {
-  Welcome: 'Welcome',
+  CreateAccount: 'CreateAccount',
   SignIn: 'SignIn',
   SignUp: 'SignUp',
+  Welcome: 'Welcome',
 } as const;
 
 const MainStackScreens = {
