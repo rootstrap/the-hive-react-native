@@ -1,6 +1,6 @@
 import { makeTheme } from 'dripsy';
 
-import { fontWeights, textSizes } from './typography';
+import { fontWeights, textFormats } from './typography';
 
 // TODO: Add fonts
 const fontName = 'arial';
@@ -56,16 +56,16 @@ const palette = {
 };
 
 const sizes = {
-  small: 84,
-  medium: 99,
-  large: 113,
+  small: '60%',
+  medium: '80%',
+  large: '100%',
 };
 
 const theme = makeTheme({
   button: {
     primary: 'primary',
-    secondary: 'primary',
-    tertiary: 'primary',
+    secondary: 'secondary',
+    tertiary: 'tertiary',
   },
   customFonts: {
     [fontName]: {
@@ -83,21 +83,37 @@ const theme = makeTheme({
   },
   colors: {
     background: palette.neutrals.white,
+    '$Button-Disabled-Background': palette.neutrals[100],
     '$Button-Primary-Background': palette.primary[500],
+    '$Button-Primary-Disabled-Background': palette.neutrals[100],
+    '$Button-Primary-Disabled-Text': palette.neutrals[400],
     '$Button-Primary-Label': palette.neutrals.white,
+    '$Button-Primary-Pressed-Background': palette.primary[600],
+    '$Button-Primary-Pressed-Text': palette.neutrals.white,
     '$Button-Secondary-Background': palette.primary[200],
+    '$Button-Secondary-Disabled-Background': palette.transparent,
+    '$Button-Secondary-Disabled-Text': palette.neutrals[400],
     '$Button-Secondary-Label': palette.primary[500],
+    '$Button-Secondary-Pressed-Color':  palette.neutrals.white,
+    '$Button-Secondary-Pressed-Background':  palette.primary[500],
+    '$Button-Secondary-Pressed-Text': palette.neutrals.white,
     '$Button-Tertiary-Background': palette.transparent,
+    '$Button-Tertiary-Disabled-Background': palette.transparent,
+    '$Button-Tertiary-Disabled-Text': palette.neutrals[400],
     '$Button-Tertiary-Label': palette.primary[500],
+    '$Button-Tertiary-Pressed-Background': palette.transparent,
+    '$Button-Tertiary-Pressed-Text': palette.primary[600],
   },
   borders: {},
   borderRadius: {
+    small: 16,
     medium: 16,
+    large: 16,
   },
   sizes,
   space: {},
   fontSizes: {}, // overriding the default font sizes
-  text: textSizes,
+  text: textFormats,
   fontWeights,
   shadows: {},
   status: {

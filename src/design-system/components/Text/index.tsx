@@ -4,7 +4,7 @@ import { Text as DripsyText } from 'dripsy';
 
 import type { TextProps } from './types';
 
-const Text = ({ children, variant, sx }: TextProps) => (
+const Text = ({ children, variant = 'h1', sx }: TextProps) => (
   <DripsyText sx={sx} variant={variant}>
     {children}
   </DripsyText>
