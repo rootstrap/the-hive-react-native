@@ -1,1 +1,1 @@
-export * from 'design-system/Text';
+export * from 'design-system/components/index';
