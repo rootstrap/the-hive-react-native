@@ -25,7 +25,7 @@ const theme = makeTheme({
       '700': `${fontName}-Bold`,
       '800': `${fontName}-ExtraBold`,
       normal: `${fontName}-Medium`,
-    }
+    },
   },
   fonts: {
     root: `${fontName}-Medium`,
