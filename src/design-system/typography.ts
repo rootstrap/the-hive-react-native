@@ -11,82 +11,82 @@ const createTextSize = ({
   fontWeight,
   lineHeight: leading,
   letterSpacing,
- // textTransform,
-}: {
+}: // textTransform,
+{
   fontFamily?: string;
   fontSize: number;
-  fontWeight?: string,
+  fontWeight?: string;
   lineHeight?: number;
   letterSpacing?: number;
- // textTransform?: string;
+  // textTransform?: string;
 }) => ({
   fontFamily,
   fontSize,
   fontWeight,
   lineHeight: leading,
   letterSpacing,
- //textTransform,
+  //textTransform,
 });
 
 export const textFormats = {
-  'h1': createTextSize({
+  h1: createTextSize({
     //fontFamily: 'Spartan',
     fontSize: 32,
     fontWeight: fontWeights.extraBold,
     lineHeight: 40,
     //textTransform: 'uppercase',
   }),
-  'h2': createTextSize({
+  h2: createTextSize({
     fontFamily: 'Spartan',
     fontSize: 28,
     fontWeight: fontWeights.extraBold,
     lineHeight: 40,
-   // textTransform: 'uppercase',
+    // textTransform: 'uppercase',
   }),
-  'h3': createTextSize({
+  h3: createTextSize({
     fontFamily: 'Spartan',
     fontSize: 24,
     fontWeight: fontWeights.bold,
     lineHeight: 36,
   }),
-  'h4': createTextSize({
-    fontFamily: 'Spartan',
+  h4: createTextSize({
+    //fontFamily: 'Spartan',
     fontSize: 24,
     fontWeight: fontWeights.medium,
     lineHeight: 32,
   }),
-  'h5': createTextSize({
-    fontFamily: 'Spartan',
+  h5: createTextSize({
+    //fontFamily: 'Spartan',
     fontSize: 16,
     fontWeight: fontWeights.medium,
     lineHeight: 24,
   }),
   'p-sm-regular': createTextSize({
-    fontFamily: 'Spartan',
+    //fontFamily: 'Spartan',
     fontSize: 14,
     fontWeight: fontWeights.regular,
     lineHeight: 20,
   }),
   'p-sm-medium': createTextSize({
-    fontFamily: 'Spartan',
+   //fontFamily: 'Spartan',
     fontSize: 14,
     fontWeight: fontWeights.medium,
     lineHeight: 20,
   }),
   'p-sm-bold': createTextSize({
-    fontFamily: 'Spartan',
+   // fontFamily: 'Spartan',
     fontSize: 14,
     fontWeight: fontWeights.bold,
     lineHeight: 20,
   }),
   'p-md-regular': createTextSize({
-    fontFamily: 'Spartan',
+    //fontFamily: 'Spartan',
     fontSize: 16,
     fontWeight: fontWeights.regular,
     lineHeight: 24,
   }),
   'p-md-regular-strike-through': createTextSize({
-    fontFamily: 'Spartan',
+   // fontFamily: 'Spartan',
     fontSize: 16,
     fontWeight: fontWeights.regular,
     lineHeight: 24,
