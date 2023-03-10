@@ -2,9 +2,7 @@ import { makeTheme } from 'dripsy';
 
 import { fontWeights, textSizes } from './typography';
 
-// TODO: Add fonts
-const fontName = 'arial';
-const headingFontName = 'arial';
+const fontName = 'LeagueSpartan';
 
 const palette = {
   black: '#000000',
@@ -19,17 +17,18 @@ const palette = {
 const theme = makeTheme({
   customFonts: {
     [fontName]: {
-      default: fontName,
-      bold: 'Inter-Bold',
-    },
-    [headingFontName]: {
-      default: headingFontName,
-      bold: 'DMSans-Bold',
-    },
+      bold: `${fontName}-Bold`,
+      default: `${fontName}-Medium`,
+      '400': `${fontName}-Regular`,
+      '500': `${fontName}-Medium`,
+      '600': `${fontName}-SemiBold`,
+      '700': `${fontName}-Bold`,
+      '800': `${fontName}-ExtraBold`,
+      normal: `${fontName}-Medium`,
+    }
   },
   fonts: {
-    root: fontName,
-    heading: headingFontName,
+    root: `${fontName}-Medium`,
   },
   colors: {
     background: palette.backgrounds.white,
