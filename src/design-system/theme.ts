@@ -5,7 +5,7 @@ import { fontWeights, textSizes } from './typography';
 const fontName = 'LeagueSpartan';
 
 const colors = {
-  // chat 
+  // chat
   'chat-1': '#897716',
   'chat-2': '#B48B01',
   'chat-3': '#FF001C',
