@@ -20,7 +20,7 @@ export const textVariants = {
     lineHeight: 40,
     textTransform: 'uppercase',
   },
-  h3:{
+  h3: {
     fontSize: 24,
     fontWeight: fontWeights.bold,
     lineHeight: 36,
@@ -59,7 +59,7 @@ export const textVariants = {
     fontSize: 16,
     fontWeight: fontWeights.regular,
     lineHeight: 24,
-    textDecorationLine: 'line-through'
+    textDecorationLine: 'line-through',
   },
   'button-lg': {
     fontSize: 16,

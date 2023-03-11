@@ -76,7 +76,7 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
   return (
     <View sx={containerSx}>
       {name && (
-        <Text variant="text-base" sx={{ ...styles.name, ...nameSx }}>
+        <Text variant="text-md" sx={{ ...styles.name, ...nameSx }}>
           {name} {isRequired && '*'}
         </Text>
       )}
@@ -87,7 +87,7 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
 
         <TextInput
           ref={ref}
-          variant="text.text-base"
+          variant="text.text-md"
           sx={{ ...styles.input, ...inputSx }}
           placeholderTextColor="#2A2F39"
           secureTextEntry={toggle}
