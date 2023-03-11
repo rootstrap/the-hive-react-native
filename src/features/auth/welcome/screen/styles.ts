@@ -5,5 +5,9 @@ export default StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'white'
   },
+  buttonsContainer: {
+    width: '100%'
+  }
 });
