@@ -1,6 +1,6 @@
 import { makeTheme } from 'dripsy';
 
-import { fontWeights, textSizes } from './typography';
+import { fontWeights, textVariants } from './typography';
 
 const fontName = 'LeagueSpartan';
 
@@ -73,8 +73,7 @@ const theme = makeTheme({
   colors,
   borders: {},
   space: {},
-  fontSizes: {}, // overriding the default font sizes
-  text: textSizes,
+  text: textVariants,
   fontWeights,
   shadows: {},
   types: {
