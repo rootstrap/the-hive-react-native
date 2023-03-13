@@ -21,6 +21,7 @@ module.exports = {
           'design-system': './src/design-system',
           features: './src/features',
           hooks: './src/hooks',
+          localization: './src/localization',
           navigation: './src/navigation',
         },
       },
