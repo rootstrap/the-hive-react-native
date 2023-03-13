@@ -9,8 +9,8 @@ type ImageProps = {
   sx?: SxProp;
 } & Omit<ComponentProps<typeof DripsyImage>, 'source'>;
 
-const Image = ({ name, sx, ...props }: ImageProps) => {
-  return <DripsyImage {...props} sx={sx} source={images[name]()} />;
-};
+const Image = ({ name, sx, ...props }: ImageProps) => (
+  <DripsyImage {...props} sx={sx} source={images[name]()} />
+);
 
 export { Image };

@@ -18,8 +18,6 @@ const getContentStyles = ({ isInvalid, isFocused, isSuccess }: TextInputStates) 
   return {
     ...styles.content,
     borderColor: currentColor,
-    shadowColor: currentColor,
-    shadowOpacity: isInvalid || isFocused || isSuccess ? 0.5 : 0,
   };
 };
 
@@ -76,7 +74,7 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
   return (
     <View sx={containerSx}>
       {name && (
-        <Text variant="text-md" sx={{ ...styles.name, ...nameSx }}>
+        <Text variant="p-md-regular" sx={{ ...styles.name, ...nameSx }}>
           {name} {isRequired && '*'}
         </Text>
       )}
@@ -87,7 +85,7 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
 
         <TextInput
           ref={ref}
-          variant="text.text-md"
+          variant="text.p-md-regular"
           sx={{ ...styles.input, ...inputSx }}
           placeholderTextColor="#2A2F39"
           secureTextEntry={toggle}
@@ -100,7 +98,11 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
           <Icon name="show" containerSx={styles.toggle} onPress={defaultOnPressIcon} />
         )}
       </View>
-      {isInvalid && !hideError && <Text sx={{ ...styles.error, ...errorSx }}>{error}</Text>}
+      {isInvalid && !hideError && (
+        <Text variant="text-sm" sx={{ ...styles.error, ...errorSx }}>
+          {error}
+        </Text>
+      )}
     </View>
   );
 };

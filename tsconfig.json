@@ -8,6 +8,12 @@
     "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
     "baseUrl": "./",
     "paths": {
+      "common": ["src/common/*"],
+      "constants": ["src/constants/*"],
+      "design-system": ["src/design-system/index"],
+      "features": ["src/features/*"],
+      "hooks": ["src/hooks/*"],
+      "navigation": ["src/navigation/index"],
       "*": ["src/*"],
       "localization": ["src/localization"],
     },

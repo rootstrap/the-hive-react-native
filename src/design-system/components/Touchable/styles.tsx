@@ -7,7 +7,6 @@ export default Styles.create({
   container: {
     alignItems: 'center',
     borderRadius: 16,
-    marginX: 16,
     padding: 16,
   },
   primary: {

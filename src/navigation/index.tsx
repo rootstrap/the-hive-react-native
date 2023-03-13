@@ -21,6 +21,9 @@ const NavigationStack: React.FunctionComponent = () => {
     <AppStack.Navigator
       screenOptions={{
         headerShown: false,
+        contentStyle: {
+          backgroundColor: '#FFFFFF',
+        },
       }}>
       {!user ? (
         <AppStack.Screen name="Auth" component={AuthStack} />

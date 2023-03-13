@@ -21,14 +21,14 @@ const WelcomeScreen: React.FunctionComponent<WelcomePropTypes> = ({ navigation: 
         <Touchable
           testID="dummy-button"
           accessibilityState={{ disabled: false }}
-          onPress={onSignInPress}>
+          onPress={onSignUpPress}>
           {strings.WELCOME.register}
         </Touchable>
         <Touchable
           testID="dummy-button"
           accessibilityState={{ disabled: false }}
           containerSx={{ marginTop: 16 }}
-          onPress={onSignUpPress}
+          onPress={onSignInPress}
           variant="secondary">
           {strings.WELCOME.login}
         </Touchable>
