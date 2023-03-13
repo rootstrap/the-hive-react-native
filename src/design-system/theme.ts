@@ -58,17 +58,16 @@ const theme = makeTheme({
   customFonts: {
     [fontName]: {
       bold: `${fontName}-Bold`,
-      default: `${fontName}-Medium`,
+      default: `${fontName}-Regular`,
       '400': `${fontName}-Regular`,
       '500': `${fontName}-Medium`,
       '600': `${fontName}-SemiBold`,
       '700': `${fontName}-Bold`,
       '800': `${fontName}-ExtraBold`,
-      normal: `${fontName}-Medium`,
     },
   },
   fonts: {
-    root: `${fontName}-Medium`,
+    root: `${fontName}-Regular`,
   },
   colors,
   borders: {},

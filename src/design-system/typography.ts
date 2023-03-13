@@ -1,5 +1,5 @@
 export const fontWeights = {
-  default: '500',
+  default: '400',
   regular: '400',
   medium: '500',
   semiBold: '600',
@@ -31,6 +31,11 @@ export const textVariants = {
     lineHeight: 32,
   },
   h5: {
+    fontSize: 20,
+    fontWeight: fontWeights.medium,
+    lineHeight: 28,
+  },
+  h6: {
     fontSize: 16,
     fontWeight: fontWeights.medium,
     lineHeight: 24,
@@ -80,11 +85,13 @@ export const textVariants = {
     fontSize: 16,
     fontWeight: fontWeights.medium,
     lineHeight: 20,
+    textDecorationLine: 'underline',
   },
   'link-md': {
     fontSize: 14,
     fontWeight: fontWeights.medium,
     lineHeight: 16,
+    textDecorationLine: 'underline',
   },
   'text-xs': {
     fontSize: 11,
@@ -105,6 +112,6 @@ export const textVariants = {
     fontSize: 16,
     fontWeight: fontWeights.regular,
     lineHeight: 24,
-    // letter-spacing: -0.025em; // TODO: see how translate this
+    letterSpacing: -0.4,
   },
 } as const;
