@@ -1,5 +1,8 @@
 import { Styles } from 'dripsy';
 
+import { SxPropWithTintColor } from 'design-system/types';
+import { colorFromCurrentTheme } from 'design-system/utils';
+
 export default Styles.create({
   container: {
     alignItems: 'center',
@@ -13,15 +16,21 @@ export default Styles.create({
   primaryDisabled: {
     backgroundColor: 'n-100',
   },
+  primaryDisabledIcon: {
+    tintColor: colorFromCurrentTheme('n-400'),
+  } as NonNullable<SxPropWithTintColor>,
   primaryDisabledText: {
     color: 'n-400',
   },
   primaryIcon: {
-    // tintColor: 'white', // TODO: check how to assign tint color without TS error
-  },
+    tintColor: colorFromCurrentTheme('white'),
+  } as NonNullable<SxPropWithTintColor>,
   primaryPressed: {
     backgroundColor: 'primary-600',
   },
+  primaryPressedIcon: {
+    tintColor: colorFromCurrentTheme('white'),
+  } as NonNullable<SxPropWithTintColor>,
   primaryPressedText: {
     color: 'white',
   },
@@ -34,15 +43,21 @@ export default Styles.create({
   secondaryDisabled: {
     backgroundColor: 'transparent',
   },
+  secondaryDisabledIcon: {
+    tintColor: colorFromCurrentTheme('n-400'),
+  } as NonNullable<SxPropWithTintColor>,
   secondaryDisabledText: {
     color: 'n-400',
   },
   secondaryIcon: {
-    // tintColor: 'primary-500', // TODO: check how to assign tint color without TS error
-  },
+    tintColor: colorFromCurrentTheme('primary-500'),
+  } as NonNullable<SxPropWithTintColor>,
   secondaryPressed: {
     backgroundColor: 'primary-500',
   },
+  secondaryPressedIcon: {
+    tintColor: colorFromCurrentTheme('white'),
+  } as NonNullable<SxPropWithTintColor>,
   secondaryPressedText: {
     color: 'white',
   },
@@ -55,15 +70,21 @@ export default Styles.create({
   tertiaryDisabled: {
     backgroundColor: 'transparent',
   },
+  tertiaryDisabledIcon: {
+    tintColor: colorFromCurrentTheme('n-400'),
+  } as NonNullable<SxPropWithTintColor>,
   tertiaryDisabledText: {
     color: 'n-400',
   },
   tertiaryIcon: {
-    // tintColor: 'primary-500', // TODO: check how to assign tint color without TS error
-  },
+    tintColor: colorFromCurrentTheme('primary-500'),
+  } as NonNullable<SxPropWithTintColor>,
   tertiaryPressed: {
     backgroundColor: 'transparent',
   },
+  tertiaryPressedIcon: {
+    tintColor: colorFromCurrentTheme('primary-600'),
+  } as NonNullable<SxPropWithTintColor>,
   tertiaryPressedText: {
     color: 'primary-600',
   },
