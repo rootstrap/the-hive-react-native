@@ -31,6 +31,11 @@ export const textVariants = {
     lineHeight: 32,
   },
   h5: {
+    fontSize: 20,
+    fontWeight: fontWeights.medium,
+    lineHeight: 28,
+  },
+  h6: {
     fontSize: 16,
     fontWeight: fontWeights.medium,
     lineHeight: 24,
