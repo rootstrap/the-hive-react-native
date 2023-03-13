@@ -1,23 +1,85 @@
-import React, { ComponentProps } from 'react';
+import React, { useState } from 'react';
 import { TouchableOpacity } from 'react-native';
 
-import { SxProp, styled } from 'dripsy';
+import { Text } from 'design-system';
+import { Image, View, styled } from 'dripsy';
 
-import { Text } from '../Text';
+import styles from './styles';
+import { TouchableProps } from './types';
 
-type TouchableProps = {
-  children: React.ReactNode;
-  sx?: SxProp;
-  textSx?: SxProp;
-} & ComponentProps<typeof TouchableOpacity>;
+const DripsyTouchable = styled(TouchableOpacity, {
+  themeKey: 'touchable',
+})({});
 
-const DripsyTouchable = styled(TouchableOpacity)({});
+const Touchable = ({
+  children,
+  disabled,
+  containerSx,
+  leftIcon,
+  rightIcon,
+  textSx,
+  textVariant = 'button-lg',
+  variant = 'primary',
+  ...props
+}: TouchableProps) => {
+  const [isPressed, setIsPressed] = useState(false);
 
-const Touchable = ({ children, textSx, ...props }: TouchableProps) => (
-  <DripsyTouchable {...props}>
-    {typeof children === 'string' ? <Text sx={textSx}>{children}</Text> : children}
-  </DripsyTouchable>
-);
+  return (
+    <DripsyTouchable
+      {...props}
+      activeOpacity={1}
+      disabled={disabled}
+      sx={{
+        ...styles.container,
+        ...styles[variant],
+        ...(isPressed && styles[`${variant}Pressed`]),
+        ...(disabled && styles[`${variant}Disabled`]),
+        ...containerSx,
+      }}
+      onPressIn={() => setIsPressed(true)}
+      onPressOut={() => setIsPressed(false)}
+      variant={variant}>
+      {typeof children === 'string' ? (
+        <View sx={styles.rowContainer}>
+          {leftIcon && (
+            <Image
+              source={leftIcon}
+              sx={{
+                ...styles.icon,
+                ...styles[`${variant}Icon`],
+                /* TODO: add variant pressed and disabled icon tint color */
+                ...styles.leftIcon,
+              }}
+            />
+          )}
+          <Text
+            sx={{
+              ...styles[`${variant}Text`],
+              ...(isPressed && styles[`${variant}PressedText`]),
+              ...(disabled && styles[`${variant}DisabledText`]),
+              ...textSx,
+            }}
+            variant={textVariant}>
+            {children}
+          </Text>
+          {rightIcon && (
+            <Image
+              source={rightIcon}
+              sx={{
+                ...styles.icon,
+                ...styles[`${variant}Icon`],
+                /* TODO: add variant pressed and disabled icon tint color */
+                ...styles.rightIcon,
+              }}
+            />
+          )}
+        </View>
+      ) : (
+        children
+      )}
+    </DripsyTouchable>
+  );
+};
 
 Touchable.defaultProps = {
   sx: undefined,

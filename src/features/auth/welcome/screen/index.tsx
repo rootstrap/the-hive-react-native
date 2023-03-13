@@ -1,9 +1,8 @@
 import React from 'react';
 import { StatusBar, useColorScheme } from 'react-native';
 
-import { SafeAreaView } from 'dripsy';
-
-import Button from 'common/Button';
+import { Touchable } from 'design-system';
+import { SafeAreaView, View } from 'dripsy';
 
 import styles from './styles';
 import { WelcomePropTypes } from './types';
@@ -17,18 +16,22 @@ const WelcomeScreen: React.FunctionComponent<WelcomePropTypes> = ({ navigation: 
   return (
     <SafeAreaView sx={styles.container}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <Button
-        testID="dummy-button"
-        accessibilityState={{ disabled: false }}
-        title="Sign In"
-        onPress={onSignInPress}
-      />
-      <Button
-        testID="dummy-button"
-        accessibilityState={{ disabled: false }}
-        title="Sign Up"
-        onPress={onSignUpPress}
-      />
+      <View sx={styles.buttonsContainer}>
+        <Touchable
+          testID="dummy-button"
+          accessibilityState={{ disabled: false }}
+          onPress={onSignInPress}>
+          Register
+        </Touchable>
+        <Touchable
+          testID="dummy-button"
+          accessibilityState={{ disabled: false }}
+          containerSx={{ marginTop: 16 }}
+          onPress={onSignUpPress}
+          variant="secondary">
+          Login
+        </Touchable>
+      </View>
     </SafeAreaView>
   );
 };

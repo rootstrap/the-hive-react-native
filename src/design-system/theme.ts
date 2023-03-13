@@ -75,6 +75,11 @@ const theme = makeTheme({
   text: textVariants,
   fontWeights,
   shadows: {},
+  touchable: {
+    primary: 'primary',
+    secondary: 'secondary',
+    tertiary: 'tertiary',
+  },
   types: {
     onlyAllowThemeValues: {
       colors: 'always',
