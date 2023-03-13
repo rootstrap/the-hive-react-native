@@ -7,46 +7,111 @@ export const fontWeights = {
   extraBold: '800',
 } as const;
 
-const createTextSize = ({
-  fontSize,
-  lineHeight: leading,
-  letterSpacing,
-}: {
-  fontSize: number;
-  lineHeight?: number;
-  letterSpacing?: number;
-}) => ({
-  fontSize,
-  lineHeight: leading,
-  letterSpacing,
-});
-
-export const textSizes = {
-  'text-xs': createTextSize({
-    fontSize: 11,
-  }),
-  'text-sm': createTextSize({
-    fontSize: 12,
-  }),
-  'text-med': createTextSize({
-    fontSize: 14,
-  }),
-  'text-base': createTextSize({
-    fontSize: 16,
-  }),
-  'text-lg': createTextSize({
-    fontSize: 18,
-  }),
-  'text-xl': createTextSize({
-    fontSize: 20,
-  }),
-  'text-2xl': createTextSize({
-    fontSize: 24,
-  }),
-  'text-3xl': createTextSize({
+export const textVariants = {
+  h1: {
+    fontSize: 32,
+    fontWeight: fontWeights.extraBold,
+    lineHeight: 40,
+    textTransform: 'uppercase',
+  },
+  h2: {
     fontSize: 28,
-  }),
-  'text-4xl': createTextSize({
-    fontSize: 38,
-  }),
+    fontWeight: fontWeights.extraBold,
+    lineHeight: 40,
+    textTransform: 'uppercase',
+  },
+  h3: {
+    fontSize: 24,
+    fontWeight: fontWeights.bold,
+    lineHeight: 36,
+  },
+  h4: {
+    fontSize: 24,
+    fontWeight: fontWeights.medium,
+    lineHeight: 32,
+  },
+  h5: {
+    fontSize: 20,
+    fontWeight: fontWeights.medium,
+    lineHeight: 28,
+  },
+  h6: {
+    fontSize: 16,
+    fontWeight: fontWeights.medium,
+    lineHeight: 24,
+  },
+  'p-sm-regular': {
+    fontSize: 14,
+    fontWeight: fontWeights.regular,
+    lineHeight: 20,
+  },
+  'p-sm-medium': {
+    fontSize: 14,
+    fontWeight: fontWeights.medium,
+    lineHeight: 20,
+  },
+  'p-sm-bold': {
+    fontSize: 14,
+    fontWeight: fontWeights.bold,
+    lineHeight: 20,
+  },
+  'p-md-regular': {
+    fontSize: 16,
+    fontWeight: fontWeights.regular,
+    lineHeight: 24,
+  },
+  'p-md-regular-line': {
+    fontSize: 16,
+    fontWeight: fontWeights.regular,
+    lineHeight: 24,
+    textDecorationLine: 'line-through',
+  },
+  'button-lg': {
+    fontSize: 16,
+    fontWeight: fontWeights.bold,
+    lineHeight: 20,
+  },
+  'button-md': {
+    fontSize: 14,
+    fontWeight: fontWeights.bold,
+    lineHeight: 20,
+  },
+  'button-sm': {
+    fontSize: 12,
+    fontWeight: fontWeights.semiBold,
+    lineHeight: 20,
+  },
+  'link-lg': {
+    fontSize: 16,
+    fontWeight: fontWeights.medium,
+    lineHeight: 20,
+    textDecorationLine: 'underline',
+  },
+  'link-md': {
+    fontSize: 14,
+    fontWeight: fontWeights.medium,
+    lineHeight: 16,
+    textDecorationLine: 'underline',
+  },
+  'text-xs': {
+    fontSize: 11,
+    fontWeight: fontWeights.medium,
+    lineHeight: 12,
+  },
+  'text-sm': {
+    fontSize: 12,
+    fontWeight: fontWeights.medium,
+    lineHeight: 16,
+  },
+  'text-md': {
+    fontSize: 14,
+    fontWeight: fontWeights.medium,
+    lineHeight: 16,
+  },
+  'text-lg': {
+    fontSize: 16,
+    fontWeight: fontWeights.regular,
+    lineHeight: 24,
+    letterSpacing: -0.4,
+  },
 } as const;
