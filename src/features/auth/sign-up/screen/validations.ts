@@ -1,5 +1,7 @@
 import { UseFormReturn } from 'react-hook-form';
 
+import strings from 'localization';
+
 import type { Validations } from 'constants/validations';
 
 export type Fields = {
@@ -12,35 +14,32 @@ const getValidations = ({ watch }: Pick<UseFormReturn<Fields>, 'watch'>): Valida
   email: {
     required: {
       value: true,
-      message: "Email can't be blank.",
+      message: strings.SIGN_UP.blankEmailError,
     },
     pattern: {
       value: /\S+@\S+\.\S+/,
-      message: 'The email has a wrong format.',
+      message: strings.SIGN_UP.formatEmailError,
     },
   },
   password: {
     required: {
       value: true,
-      message: "Password can't be blank.",
+      message: strings.SIGN_UP.blankPasswordError,
     },
     minLength: {
       value: 6,
-      message: 'Password must have at least 6 characters.',
+      message: strings.SIGN_UP.shortPasswordError,
     },
   },
   passwordConfirmation: {
     required: {
       value: true,
-      message: "Password confirmation can't be blank.",
+      message: strings.SIGN_UP.blankConfirmationError,
     },
     validate: (passwordConfirmation = '') => {
       const password = watch('password');
 
-      return (
-        password === passwordConfirmation ||
-        'The password confirmation does not match with the password.'
-      );
+      return password === passwordConfirmation || strings.SIGN_UP.passwordsMustMatchError;
     },
   },
 });

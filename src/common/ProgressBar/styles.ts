@@ -2,13 +2,13 @@ import { Styles } from 'dripsy';
 
 const styles = Styles.create({
   container: {
-    backgroundColor: '#F2F2F2',
+    backgroundColor: 'n-100',
     borderRadius: 5,
     flex: 1,
     height: 4,
   },
   progress: {
-    backgroundColor: '#3A00E5',
+    backgroundColor: 'primary-500',
     borderRadius: 5,
     height: '100%',
   },

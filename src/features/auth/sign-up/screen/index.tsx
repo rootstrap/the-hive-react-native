@@ -4,10 +4,10 @@ import { Keyboard, ScrollView } from 'react-native';
 
 import auth from '@react-native-firebase/auth';
 
-import { Icon, Input, Text } from 'design-system';
+import { Icon, Input, Text, Touchable } from 'design-system';
 import { SafeAreaView, View, useSx } from 'dripsy';
+import strings from 'localization';
 
-import Button from 'common/Button';
 import DatePicker from 'common/DatePicker';
 import ProgressBar from 'common/ProgressBar';
 import withControllerHOC from 'common/withControllerHOC';
@@ -51,7 +51,7 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
       const signInMethods = await auth().fetchSignInMethodsForEmail(email);
       setConnectionError(null);
       if (signInMethods.length > 0) {
-        setError('email', { type: 'custom', message: 'This email is already in use' });
+        setError('email', { type: 'custom', message: strings.SIGN_UP.alreadyUsedEmailError });
         return;
       }
       navigate('CreateAccount');
@@ -68,6 +68,7 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
   };
 
   const sx = useSx();
+  const disabled = email === '' || password === '' || passwordConfirmation === '';
 
   return (
     <SafeAreaView sx={styles.container}>
@@ -76,12 +77,16 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
         <ProgressBar currentStep={CURRENT_STEP} totalSteps={TOTAL_ACCOUNT_SETUP_STEPS} />
       </View>
       <ScrollView style={sx({ ...styles.container, ...styles.content })}>
-        <Text sx={styles.title}>Welcome to the hive</Text>
-        <Text sx={styles.description}>Create your account, and start finding your hive.</Text>
+        <Text variant="h3" sx={styles.title}>
+          {strings.SIGN_UP.welcome}
+        </Text>
+        <Text variant="p-md-regular" sx={styles.description}>
+          {strings.SIGN_UP.description}
+        </Text>
         <FormInput
           id="email"
-          name="Email"
-          placeholder="example@email.com"
+          name={strings.SIGN_UP.email}
+          placeholder={strings.SIGN_UP.emailPlaceholder}
           control={control}
           containerSx={styles.inputContainer}
           rules={validations.email}
@@ -103,12 +108,12 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
           }}
           maximumDate={maximumDate}
           required
-          label="Birth Date"
+          label={strings.SIGN_UP.birthDate}
           containerSx={styles.inputContainer}
         />
         <FormInput
           id="password"
-          name="Password"
+          name={strings.SIGN_UP.password}
           control={control}
           containerSx={styles.inputContainer}
           rules={validations.password}
@@ -121,7 +126,7 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
         />
         <FormInput
           id="passwordConfirmation"
-          name="Confirm Password"
+          name={strings.SIGN_UP.passwordConfirmation}
           control={control}
           rules={validations.passwordConfirmation}
           onSubmitEditing={onPress}
@@ -133,15 +138,19 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
         />
       </ScrollView>
       <View sx={styles.content}>
-        <Button
-          title={isLoading ? 'Loading...' : 'Continue'}
-          onPress={onPress}
-          disabled={email === '' || password === '' || passwordConfirmation === ''}
-        />
+        <Touchable
+          testID="continue-register-button"
+          accessibilityState={{
+            disabled,
+          }}
+          disabled={disabled}
+          onPress={onPress}>
+          {isLoading ? strings.COMMON.loading : strings.SIGN_UP.continue}
+        </Touchable>
         {!!connectionError && (
-          <Text>
-            Something went wrong.
-            {connectionError.includes(NETWORK_ERROR) ? ' Check your internet connection.' : ''}
+          <Text variant="text-sm" sx={styles.error}>
+            {strings.COMMON.somethingWentWrong}
+            {connectionError.includes(NETWORK_ERROR) ? `. ${strings.COMMON.connectionError}.` : ''}
           </Text>
         )}
       </View>

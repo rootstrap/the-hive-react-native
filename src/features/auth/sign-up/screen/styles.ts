@@ -12,7 +12,7 @@ const styles = Styles.create({
     paddingX: 16,
   },
   back: {
-    backgroundColor: '#F7F5FF',
+    backgroundColor: 'primary-200',
     borderRadius: 20,
     marginRight: 22,
   },
@@ -28,6 +28,9 @@ const styles = Styles.create({
   },
   inputContainer: {
     marginBottom: 16,
+  },
+  error: {
+    color: 'error-500',
   },
 });
 

@@ -5,11 +5,11 @@ const styles = Styles.create({
     marginBottom: 8,
   },
   required: {
-    color: '#DB3131',
+    color: 'error-500',
   },
   container: {
     alignItems: 'center',
-    borderColor: '#8156FF',
+    borderColor: 'primary-300',
     borderRadius: 8,
     borderWidth: 1,
     flexDirection: 'row',
