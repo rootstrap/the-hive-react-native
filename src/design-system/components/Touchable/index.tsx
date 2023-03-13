@@ -47,7 +47,8 @@ const Touchable = ({
               sx={{
                 ...styles.icon,
                 ...styles[`${variant}Icon`],
-                /* TODO: add variant pressed and disabled icon tint color */
+                ...(isPressed && styles[`${variant}PressedIcon`]),
+                ...(disabled && styles[`${variant}DisabledIcon`]),
                 ...styles.leftIcon,
               }}
             />
@@ -68,7 +69,8 @@ const Touchable = ({
               sx={{
                 ...styles.icon,
                 ...styles[`${variant}Icon`],
-                /* TODO: add variant pressed and disabled icon tint color */
+                ...(isPressed && styles[`${variant}PressedIcon`]),
+                ...(disabled && styles[`${variant}DisabledIcon`]),
                 ...styles.rightIcon,
               }}
             />
