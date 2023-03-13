@@ -9,6 +9,7 @@
     "baseUrl": "./",
     "paths": {
       "*": ["src/*"],
+      "localization": ["src/localization"],
     },
     "typeRoots": ["node_modules/@types/", "src/@types/"],
   },

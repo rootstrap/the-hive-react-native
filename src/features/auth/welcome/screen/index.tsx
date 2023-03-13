@@ -3,6 +3,7 @@ import { StatusBar, useColorScheme } from 'react-native';
 
 import { Touchable } from 'design-system';
 import { SafeAreaView, View } from 'dripsy';
+import strings from 'localization';
 
 import styles from './styles';
 import { WelcomePropTypes } from './types';
@@ -21,7 +22,7 @@ const WelcomeScreen: React.FunctionComponent<WelcomePropTypes> = ({ navigation: 
           testID="dummy-button"
           accessibilityState={{ disabled: false }}
           onPress={onSignInPress}>
-          Register
+          {strings.WELCOME.register}
         </Touchable>
         <Touchable
           testID="dummy-button"
@@ -29,7 +30,7 @@ const WelcomeScreen: React.FunctionComponent<WelcomePropTypes> = ({ navigation: 
           containerSx={{ marginTop: 16 }}
           onPress={onSignUpPress}
           variant="secondary">
-          Login
+          {strings.WELCOME.login}
         </Touchable>
       </View>
     </SafeAreaView>
