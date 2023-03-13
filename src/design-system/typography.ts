@@ -85,13 +85,13 @@ export const textVariants = {
     fontSize: 16,
     fontWeight: fontWeights.medium,
     lineHeight: 20,
-    textDecorationLine: 'underline'
+    textDecorationLine: 'underline',
   },
   'link-md': {
     fontSize: 14,
     fontWeight: fontWeights.medium,
     lineHeight: 16,
-    textDecorationLine: 'underline'
+    textDecorationLine: 'underline',
   },
   'text-xs': {
     fontSize: 11,
