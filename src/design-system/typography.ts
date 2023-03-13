@@ -110,6 +110,6 @@ export const textVariants = {
     fontSize: 16,
     fontWeight: fontWeights.regular,
     lineHeight: 24,
-    // letter-spacing: -0.025em; // TODO: see how translate this
+    letterSpacing: -0.4,
   },
 } as const;
