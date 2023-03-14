@@ -9,6 +9,9 @@ const AuthStackScreens = {
 
 const MainStackScreens = {
   Home: 'Home',
+  Chats: 'Chats',
+  Connections: 'Connections',
+  Account: 'Account',
 } as const;
 
 export enum Stacks {
