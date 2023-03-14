@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -34,24 +34,27 @@ const TAB_ICONS = {
 const MainTabNav = () => {
   const { bottom } = useSafeAreaInsets();
 
-  const screenOptions = ({ route: { name } }: { route: RouteProp<MainStackParamList> }) => ({
-    headerShown: false,
-    tabBarShowLabel: false,
-    tabBarStyle: {
-      height: bottom + 66,
-    },
+  const getScreenOptions = useCallback(
+    ({ route: { name } }: { route: RouteProp<MainStackParamList> }) => ({
+      headerShown: false,
+      tabBarShowLabel: false,
+      tabBarStyle: {
+        height: bottom + 66,
+      },
 
-    tabBarIcon: ({ focused }: { focused: boolean; size: number }) => (
-      <TabBarIcon
-        iconName={TAB_ICONS[name as keyof typeof TAB_ICONS] as IconName}
-        label={TAB_LABELS[name as keyof typeof TAB_LABELS]}
-        focused={focused}
-      />
-    ),
-  });
+      tabBarIcon: ({ focused }: { focused: boolean; size: number }) => (
+        <TabBarIcon
+          iconName={TAB_ICONS[name as keyof typeof TAB_ICONS] as IconName}
+          label={TAB_LABELS[name as keyof typeof TAB_LABELS]}
+          focused={focused}
+        />
+      ),
+    }),
+    [bottom],
+  );
 
   return (
-    <Tab.Navigator screenOptions={screenOptions}>
+    <Tab.Navigator screenOptions={getScreenOptions}>
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Chats" component={ChatsScreen} />
       <Tab.Screen name="Connections" component={ConnectionsScreen} />
