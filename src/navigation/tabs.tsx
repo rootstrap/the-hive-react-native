@@ -2,7 +2,6 @@ import React from 'react';
 
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-
 import AccountScreen from 'features/account/screen';
 import ChatsScreen from 'features/chats/screen';
 import ConnectionsScreen from 'features/connections/screen';

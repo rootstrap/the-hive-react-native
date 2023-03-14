@@ -45,8 +45,7 @@ const NavigationStack: React.FunctionComponent = () => {
   if (initializing) return null;
 
   return (
-    <AppStack.Navigator
-      screenOptions={DEFAULT_OPTIONS}>
+    <AppStack.Navigator screenOptions={DEFAULT_OPTIONS}>
       {user ? (
         <>
           <AppStack.Screen
@@ -62,8 +61,7 @@ const NavigationStack: React.FunctionComponent = () => {
           </AppStack.Group>
         </>
       ) : (
-        <AppStack.Group
-          screenOptions={DEFAULT_OPTIONS}>
+        <AppStack.Group screenOptions={DEFAULT_OPTIONS}>
           <AppStack.Screen name={Screens.WELCOME} component={WelcomeScreen} />
           <AppStack.Screen name={Screens.SIGN_IN} component={SignInScreen} />
           <AppStack.Screen name={Screens.SIGN_UP} component={SignUpScreen} />
