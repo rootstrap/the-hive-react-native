@@ -1,7 +1,7 @@
-import React, { ComponentProps, useState } from 'react';
-import { TextInput as RNTextInput } from 'react-native';
+import React, { ComponentProps, ForwardRefRenderFunction, useState } from 'react';
+import { TextInput } from 'react-native';
 
-import { TextInput, View } from 'dripsy';
+import { View, useSx } from 'dripsy';
 
 import { Icon } from '../Icon';
 import { Text } from '../Text';
@@ -21,7 +21,7 @@ const getContentStyles = ({ isInvalid, isFocused, isSuccess }: TextInputStates) 
   };
 };
 
-const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextInputProps> = (
+const ForwardInputRefFunction: ForwardRefRenderFunction<TextInput, TextInputProps> = (
   {
     name,
     error,
@@ -39,6 +39,7 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
     onChangeText,
     hideError,
     leftIconProps,
+    info,
     ...props
   },
   ref,
@@ -46,17 +47,17 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
   const [toggle, setToggle] = useState(secureTextEntry);
   const [isFocused, setIsFocused] = useState(false);
 
-  const _onFocus: ComponentProps<typeof RNTextInput>['onFocus'] = e => {
+  const _onFocus: ComponentProps<typeof TextInput>['onFocus'] = e => {
     if (onFocus) onFocus(e);
     setIsFocused(true);
   };
 
-  const _onBlur: ComponentProps<typeof RNTextInput>['onBlur'] = e => {
+  const _onBlur: ComponentProps<typeof TextInput>['onBlur'] = e => {
     if (onBlur) onBlur(e);
     setIsFocused(false);
   };
 
-  const _onChangeText: ComponentProps<typeof RNTextInput>['onChangeText'] = value => {
+  const _onChangeText: ComponentProps<typeof TextInput>['onChangeText'] = value => {
     if (!onChangeText) return;
 
     if (pattern) {
@@ -68,8 +69,11 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
   };
 
   const isInvalid = Boolean(error);
+  const showError = isInvalid && !hideError;
 
   const defaultOnPressIcon = () => setToggle(prev => !prev);
+
+  const sx = useSx();
 
   return (
     <View sx={containerSx}>
@@ -85,8 +89,7 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
 
         <TextInput
           ref={ref}
-          variant="text.p-md-regular"
-          sx={{ ...styles.input, ...inputSx }}
+          style={sx({ ...styles.input, ...inputSx })}
           placeholderTextColor="#2A2F39"
           secureTextEntry={toggle}
           onFocus={_onFocus}
@@ -98,7 +101,8 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
           <Icon name="show" containerSx={styles.toggle} onPress={defaultOnPressIcon} />
         )}
       </View>
-      {isInvalid && !hideError && (
+      {!!info && !showError && <Text variant="text-sm">{info}</Text>}
+      {showError && (
         <Text variant="text-sm" sx={{ ...styles.error, ...errorSx }}>
           {error}
         </Text>

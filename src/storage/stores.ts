@@ -2,7 +2,12 @@ import StoreInstances, { GlobalStoreKeys, StorageInstance } from 'storage';
 
 import { User } from 'network/modules/user/models';
 
-import { useStoredValue, useStoredValueListener } from './hooks';
+import { getStoredValue, useStoredValueListener } from './hooks';
+
+type CreatedUser = {
+  emoji: string;
+  displayName: string;
+};
 
 /// Stores
 
@@ -10,7 +15,7 @@ const getGenericMethods = <T, TKeys extends string>(
   key: TKeys,
   instance: StorageInstance<TKeys>,
 ) => ({
-  useValue: () => useStoredValue<T, TKeys>({ key, instance }),
+  useValue: () => getStoredValue<T, TKeys>({ key, instance }),
   useValueListener: () => useStoredValueListener<T, TKeys>({ key, instance }),
   setValue: (value: T) => {
     try {
@@ -25,6 +30,7 @@ const getGenericMethods = <T, TKeys extends string>(
 
 const getGlobalStore = (instance: StorageInstance<GlobalStoreKeys>) => ({
   user: getGenericMethods<User, GlobalStoreKeys>('user', instance),
+  createdUser: getGenericMethods<CreatedUser, GlobalStoreKeys>('createdUser', instance),
 });
 
 export const GlobalStore = getGlobalStore(StoreInstances.GlobalStorageInstance);

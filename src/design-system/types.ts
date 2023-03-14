@@ -2,9 +2,12 @@ import { ColorValue } from 'react-native';
 
 import { DripsyBaseTheme, DripsyFinalTheme, SxProp } from 'dripsy';
 
+import { icons } from 'design-system/assets';
 import { colors } from 'design-system/theme';
 
 export type Colors = typeof colors;
+
+export type IconName = keyof typeof icons;
 
 export type ThemeWithColors = DripsyBaseTheme & { colors: Colors };
 

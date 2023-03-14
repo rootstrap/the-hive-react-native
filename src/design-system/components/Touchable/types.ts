@@ -1,7 +1,9 @@
 import { ComponentProps } from 'react';
-import { ImageSourcePropType, TouchableOpacity } from 'react-native';
+import { TouchableOpacity } from 'react-native';
 
 import { SxProp, Theme } from 'dripsy';
+
+import { IconName } from 'design-system/types';
 
 type TextVariant = keyof Theme['text'];
 type TouchableVariant = keyof Theme['touchable'];
@@ -9,8 +11,8 @@ type TouchableVariant = keyof Theme['touchable'];
 export type TouchableProps = {
   children: React.ReactNode;
   containerSx?: SxProp;
-  leftIcon?: ImageSourcePropType;
-  rightIcon?: ImageSourcePropType;
+  leftIcon?: IconName;
+  rightIcon?: IconName;
   textSx?: SxProp;
   textVariant?: TextVariant;
   variant?: TouchableVariant;

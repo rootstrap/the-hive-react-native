@@ -7,18 +7,17 @@ type StoredValueHookParams<TKeys extends string> = {
   instance: StorageInstance<TKeys>;
 };
 
-export const useStoredValue = <T, TKeys extends string>({
+export const getStoredValue = <T, TKeys extends string>({
   key,
   instance,
-}: StoredValueHookParams<TKeys>): T | undefined =>
-  useMemo(() => {
-    try {
-      const _value = instance.get(key);
-      return _value ? (JSON.parse(_value) as T) : undefined;
-    } catch (error) {
-      return undefined;
-    }
-  }, [key, instance]);
+}: StoredValueHookParams<TKeys>): T | undefined => {
+  try {
+    const _value = instance.get(key);
+    return _value ? (JSON.parse(_value) as T) : undefined;
+  } catch (error) {
+    return undefined;
+  }
+};
 
 export const useStoredValueListener = <T, TKeys extends string>({
   key,

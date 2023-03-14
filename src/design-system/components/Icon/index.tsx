@@ -3,7 +3,8 @@ import { TouchableOpacity } from 'react-native';
 
 import { Image as DripsyImage, View, styled } from 'dripsy';
 
-import { icons } from '../../assets';
+import { icons } from 'design-system/assets';
+
 import { IconProps } from '../Input/types';
 import styles from './styles';
 
