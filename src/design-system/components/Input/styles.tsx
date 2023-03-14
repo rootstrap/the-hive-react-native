@@ -20,6 +20,7 @@ export default Styles.create({
   input: {
     color: '$TextInput-Value',
     flex: 1,
+    fontSize: 16,
     paddingX: 16,
   },
   toggle: {

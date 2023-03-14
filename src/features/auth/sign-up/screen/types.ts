@@ -1,3 +1,5 @@
-import { AuthStackParamList, NativeStackScreenProps } from 'navigation/types';
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-export type SignUpPropTypes = NativeStackScreenProps<AuthStackParamList, 'SignUp'>;
+import NavigationParamList from 'navigation/types/navigation-param-list';
+
+export type SignUpPropTypes = NativeStackScreenProps<NavigationParamList, 'SignUp'>;

@@ -1,6 +1,6 @@
 import { Styles } from 'dripsy';
 
-import { SCREEN_PADDING_X } from 'constants/styles';
+import { SCREEN_PADDING_BOTTOM, SCREEN_PADDING_X } from 'constants/styles';
 
 const styles = Styles.create({
   container: {
@@ -20,14 +20,19 @@ const styles = Styles.create({
     paddingX: SCREEN_PADDING_X,
   },
   title: {
+    color: 'black',
     marginBottom: 4,
     marginTop: 24,
   },
   description: {
+    color: 'black',
     marginBottom: 28,
   },
   inputContainer: {
     marginBottom: 16,
+  },
+  bottomContainer: {
+    paddingBottom: SCREEN_PADDING_BOTTOM,
   },
   error: {
     color: 'error-500',

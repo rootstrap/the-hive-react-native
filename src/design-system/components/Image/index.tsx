@@ -2,7 +2,7 @@ import React, { ComponentProps } from 'react';
 
 import { Image as DripsyImage, SxProp } from 'dripsy';
 
-import { images } from '../../assets';
+import { images } from 'design-system/assets';
 
 type ImageProps = {
   name: keyof typeof images;

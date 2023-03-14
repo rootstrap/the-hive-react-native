@@ -1,3 +1,5 @@
-import { MainStackParamList, NativeStackScreenProps } from 'navigation/types';
+import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
-export type ConnectionsPropTypes = NativeStackScreenProps<MainStackParamList, 'Connections'>;
+import NavigationParamList from 'navigation/types/navigation-param-list';
+
+export type ConnectionsPropTypes = NativeStackScreenProps<NavigationParamList, 'Connections'>;

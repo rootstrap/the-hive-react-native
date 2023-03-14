@@ -54,7 +54,11 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
         setError('email', { type: 'custom', message: strings.SIGN_UP.alreadyUsedEmailError });
         return;
       }
-      navigate('CreateAccount');
+      navigate('CreateAccount', {
+        email,
+        password,
+        dateOfBirth: JSON.stringify(dateOfBirth),
+      });
     } catch (error) {
       setConnectionError((error as any)?.message);
     } finally {
@@ -78,7 +82,7 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
       </View>
       <ScrollView style={sx({ ...styles.container, ...styles.content })}>
         <Text variant="h3" sx={styles.title}>
-          {strings.SIGN_UP.welcome}
+          {strings.SIGN_UP.title}
         </Text>
         <Text variant="p-md-regular" sx={styles.description}>
           {strings.SIGN_UP.description}
@@ -97,11 +101,6 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
           autoCapitalize="none"
           autoCorrect={false}
           isRequired
-          // TODO: delete props
-          accessibilityLabelledBy={undefined}
-          accessibilityLanguage={undefined}
-          onPressIn={undefined}
-          onPressOut={undefined}
         />
         <DatePicker
           isDatePickerOpen={isDatePickerOpen}
@@ -128,12 +127,6 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
           isRequired
           autoCapitalize="none"
           autoCorrect={false}
-          // TODO: delete props
-          accessibilityLabelledBy={undefined}
-          accessibilityLanguage={undefined}
-          onPressIn={undefined}
-          onPressOut={undefined}
-          autoComplete={undefined}
         />
         <FormInput
           id="passwordConfirmation"
@@ -146,15 +139,9 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
           isRequired
           autoCapitalize="none"
           autoCorrect={false}
-          // TODO: delete props
-          accessibilityLabelledBy={undefined}
-          accessibilityLanguage={undefined}
-          onPressIn={undefined}
-          onPressOut={undefined}
-          autoComplete={undefined}
         />
       </ScrollView>
-      <View sx={styles.content}>
+      <View sx={{ ...styles.bottomContainer, ...styles.content }}>
         <Touchable
           testID="continue-register-button"
           accessibilityState={{

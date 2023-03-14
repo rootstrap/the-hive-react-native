@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { TouchableOpacity } from 'react-native';
 
-import { Text } from 'design-system';
-import { Image, View, styled } from 'dripsy';
+import { Icon, Text } from 'design-system';
+import { View, styled } from 'dripsy';
 
 import styles from './styles';
 import { TouchableProps } from './types';
@@ -41,10 +41,10 @@ const Touchable = ({
       variant={variant}>
       {typeof children === 'string' ? (
         <View sx={styles.rowContainer}>
-          {leftIcon && (
-            <Image
-              source={leftIcon}
-              sx={{
+          {!!leftIcon && (
+            <Icon
+              name={leftIcon}
+              containerSx={{
                 ...styles.icon,
                 ...styles[`${variant}Icon`],
                 ...(isPressed && styles[`${variant}PressedIcon`]),
@@ -63,10 +63,10 @@ const Touchable = ({
             variant={textVariant}>
             {children}
           </Text>
-          {rightIcon && (
-            <Image
-              source={rightIcon}
-              sx={{
+          {!!rightIcon && (
+            <Icon
+              name={rightIcon}
+              containerSx={{
                 ...styles.icon,
                 ...styles[`${variant}Icon`],
                 ...(isPressed && styles[`${variant}PressedIcon`]),

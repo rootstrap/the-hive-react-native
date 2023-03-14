@@ -1,13 +1,13 @@
 import { ComponentProps } from 'react';
-import { GestureResponderEvent } from 'react-native';
+import { GestureResponderEvent, TextInput } from 'react-native';
 
-import { Image as DripsyImage, TextInput as DripsyTextInput } from 'dripsy';
+import { Image as DripsyImage } from 'dripsy';
 import type { SxProp } from 'dripsy';
 
-import { icons } from '../../assets';
+import { IconName } from 'design-system/types';
 
 export type IconProps = {
-  name: keyof typeof icons;
+  name: IconName;
   containerSx?: SxProp;
   onPress?: (e: GestureResponderEvent) => void;
   disabled?: boolean;
@@ -26,7 +26,8 @@ export type TextInputProps = {
   errorSx?: SxProp;
   inputSx?: SxProp;
   leftIconProps?: IconProps;
-} & Omit<ComponentProps<typeof DripsyTextInput>, 'sx'>;
+  info?: string;
+} & ComponentProps<typeof TextInput>;
 
 export type TextInputStates = {
   isFocused: boolean;
