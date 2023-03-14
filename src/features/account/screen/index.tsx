@@ -8,7 +8,7 @@ import type { AccountPropTypes } from './types';
 
 const AccountScreen: FunctionComponent<AccountPropTypes> = () => (
   <SafeAreaView sx={styles.container}>
-    <Text accessibilityRole="text">Account Screen</Text>
+    <Text accessibilityRole="text">Account</Text>
   </SafeAreaView>
 );
 

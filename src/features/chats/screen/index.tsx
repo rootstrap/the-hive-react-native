@@ -8,7 +8,7 @@ import type { ChatsPropTypes } from './types';
 
 const ChatsScreen: FunctionComponent<ChatsPropTypes> = () => (
   <SafeAreaView sx={styles.container}>
-    <Text accessibilityRole="text">Chats Screen</Text>
+    <Text accessibilityRole="text">Messages</Text>
   </SafeAreaView>
 );
 
