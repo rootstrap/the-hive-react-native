@@ -44,10 +44,5 @@ const Link = ({
   );
 };
 
-Link.defaultProps = {
-  sx: undefined,
-  textSx: undefined,
-};
-
 export { Link };
 export type { LinkProps };
