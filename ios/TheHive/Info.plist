@@ -46,10 +46,22 @@
 		<key>UISupportedInterfaceOrientations</key>
 		<array>
 			<string>UIInterfaceOrientationPortrait</string>
+		</array>
+		<key>UISupportedInterfaceOrientations~ipad</key>
+		<array>
 			<string>UIInterfaceOrientationLandscapeLeft</string>
 			<string>UIInterfaceOrientationLandscapeRight</string>
+			<string>UIInterfaceOrientationPortrait</string>
 		</array>
 		<key>UIViewControllerBasedStatusBarAppearance</key>
 		<false/>
+		<key>UIAppFonts</key>
+		<array>
+			<string>LeagueSpartan-Bold.ttf</string>
+			<string>LeagueSpartan-ExtraBold.ttf</string>
+			<string>LeagueSpartan-Medium.ttf</string>
+			<string>LeagueSpartan-Regular.ttf</string>
+			<string>LeagueSpartan-SemiBold.ttf</string>
+		</array>
 	</dict>
 </plist>

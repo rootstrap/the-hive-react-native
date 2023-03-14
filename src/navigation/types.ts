@@ -1,13 +1,17 @@
 export type { NativeStackScreenProps } from '@react-navigation/native-stack';
 
 const AuthStackScreens = {
-  Welcome: 'Welcome',
+  CreateAccount: 'CreateAccount',
   SignIn: 'SignIn',
   SignUp: 'SignUp',
+  Welcome: 'Welcome',
 } as const;
 
 const MainStackScreens = {
   Home: 'Home',
+  Chats: 'Chats',
+  Connections: 'Connections',
+  Account: 'Account',
 } as const;
 
 export enum Stacks {

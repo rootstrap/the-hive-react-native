@@ -4,7 +4,7 @@ import RNBootSplash from 'react-native-bootsplash';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import AuthStack from 'navigation/stacks/auth';
-import MainStack from 'navigation/stacks/main';
+import MainTabNav from 'navigation/stacks/main';
 
 import { GlobalStore } from 'storage/stores';
 
@@ -21,11 +21,14 @@ const NavigationStack: React.FunctionComponent = () => {
     <AppStack.Navigator
       screenOptions={{
         headerShown: false,
+        contentStyle: {
+          backgroundColor: '#FFFFFF',
+        },
       }}>
-      {!user ? (
-        <AppStack.Screen name="Auth" component={AuthStack} />
+      {user ? (
+        <AppStack.Screen name="Main" component={MainTabNav} />
       ) : (
-        <AppStack.Screen name="Main" component={MainStack} />
+        <AppStack.Screen name="Auth" component={AuthStack} />
       )}
     </AppStack.Navigator>
   );
