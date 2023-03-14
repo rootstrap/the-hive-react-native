@@ -4,10 +4,11 @@ import 'react-native';
 import { render } from '@testing-library/react-native';
 
 import App from '../App';
+import { renderWithQueryProvider } from './utils';
 
 describe('App', () => {
   it('renders correctly', () => {
-    const app = render(<App />);
+    const app = renderWithQueryProvider(<App />);
     expect(app).toBeTruthy();
   });
 
