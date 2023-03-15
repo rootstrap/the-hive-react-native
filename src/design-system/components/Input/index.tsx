@@ -122,7 +122,7 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
         sx={{
           ...styles.content,
           borderColor: getCurrentColor({
-            filled: 'primary-400',
+            filled: 'primary-300',
             default: 'n-400',
           }),
           ...contentSx,

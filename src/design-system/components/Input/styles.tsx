@@ -31,7 +31,7 @@ export default Styles.create({
   toggle: {
     width: 30,
     aspectRatio: 1,
-    marginRight: 10,
+    marginRight: 6,
     alignItems: 'center',
     alignSelf: 'center',
     justifyContent: 'center',
