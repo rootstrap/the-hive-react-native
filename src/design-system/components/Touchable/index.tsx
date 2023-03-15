@@ -83,10 +83,5 @@ const Touchable = ({
   );
 };
 
-Touchable.defaultProps = {
-  sx: undefined,
-  textSx: undefined,
-};
-
 export { Touchable };
 export type { TouchableProps };

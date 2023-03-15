@@ -71,6 +71,10 @@ const theme = makeTheme({
   },
   colors,
   borders: {},
+  link: {
+    primary: 'primary',
+    secondary: 'secondary',
+  },
   space: {},
   text: textVariants,
   fontWeights,
