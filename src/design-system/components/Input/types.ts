@@ -6,11 +6,15 @@ import type { SxProp } from 'dripsy';
 
 import { icons } from '../../assets';
 
+export type IconName = keyof typeof icons;
+
 export type IconProps = {
-  name: keyof typeof icons;
+  name: IconName;
   containerSx?: SxProp;
   onPress?: (e: GestureResponderEvent) => void;
   disabled?: boolean;
+  focused?: boolean;
+  size?: number;
 } & Omit<ComponentProps<typeof DripsyImage>, 'source'>;
 
 export type TextInputProps = {

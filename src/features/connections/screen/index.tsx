@@ -8,7 +8,7 @@ import type { ConnectionsPropTypes } from './types';
 
 const ConnectionsScreen: FunctionComponent<ConnectionsPropTypes> = () => (
   <SafeAreaView sx={styles.container}>
-    <Text accessibilityRole="text">Connections Screen</Text>
+    <Text accessibilityRole="text">Connections</Text>
   </SafeAreaView>
 );
 

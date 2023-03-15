@@ -1,29 +1,46 @@
 import React from 'react';
 import { TouchableOpacity } from 'react-native';
 
-import { Image as DripsyImage, View, styled } from 'dripsy';
+import { Image as DripsyImage, SxProp, View, styled } from 'dripsy';
+
+import { IconProps } from 'design-system/components/Input/types';
 
 import { icons } from '../../assets';
-import { IconProps } from '../Input/types';
 import styles from './styles';
 
 const DripsyTouchable = styled(TouchableOpacity, {
   themeKey: 'touchable',
 })({});
 
-const Icon = ({ name, containerSx, onPress, disabled, ...props }: IconProps) => {
+const Icon = ({
+  name,
+  containerSx,
+  onPress,
+  disabled,
+  focused = false,
+  size,
+  ...props
+}: IconProps) => {
   const Container = onPress ? DripsyTouchable : View;
   const source = icons[name]();
 
+  const focusTintColor = focused ? styles.focused : styles.unfocused;
+
   return (
     <Container
-      sx={{
-        ...(onPress ? styles.touchableContainer : {}),
-        ...containerSx,
-      }}
+      sx={
+        {
+          ...(onPress ? styles.touchableContainer : {}),
+          ...containerSx,
+        } as SxProp
+      }
       onPress={onPress}
       disabled={disabled}>
-      <DripsyImage {...props} source={source} />
+      <DripsyImage
+        sx={{ ...focusTintColor, ...(size ? { height: size, width: size } : {}) }}
+        {...props}
+        source={source}
+      />
     </Container>
   );
 };

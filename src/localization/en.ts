@@ -32,5 +32,12 @@ export default {
     continue: 'Continue',
   },
 
-  MAIN_SCREEN: {},
+  MAIN_TAB_NAV: {
+    tabLabel: {
+      home: 'Chat Rooms',
+      chats: 'Messages',
+      connections: 'Connections',
+      account: 'Account',
+    },
+  },
 };

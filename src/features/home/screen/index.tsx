@@ -8,7 +8,7 @@ import type { HomePropTypes } from './types';
 
 const HomeScreen: FunctionComponent<HomePropTypes> = () => (
   <SafeAreaView sx={styles.container}>
-    <Text accessibilityRole="text">Home Screen</Text>
+    <Text accessibilityRole="text">Chat Rooms</Text>
   </SafeAreaView>
 );
 

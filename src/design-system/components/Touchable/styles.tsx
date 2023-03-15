@@ -16,19 +16,19 @@ export default Styles.create({
     backgroundColor: 'n-100',
   },
   primaryDisabledIcon: {
-    tintColor: colorFromCurrentTheme('n-400'),
+    tintColor: colorFromCurrentTheme('$touchable-icon-primary-disabled'),
   } as NonNullable<SxPropWithTintColor>,
   primaryDisabledText: {
     color: 'n-400',
   },
   primaryIcon: {
-    tintColor: colorFromCurrentTheme('white'),
+    tintColor: colorFromCurrentTheme('$touchable-icon-primary'),
   } as NonNullable<SxPropWithTintColor>,
   primaryPressed: {
     backgroundColor: 'primary-600',
   },
   primaryPressedIcon: {
-    tintColor: colorFromCurrentTheme('white'),
+    tintColor: colorFromCurrentTheme('$touchable-icon-primary-pressed'),
   } as NonNullable<SxPropWithTintColor>,
   primaryPressedText: {
     color: 'white',
@@ -43,19 +43,19 @@ export default Styles.create({
     backgroundColor: 'transparent',
   },
   secondaryDisabledIcon: {
-    tintColor: colorFromCurrentTheme('n-400'),
+    tintColor: colorFromCurrentTheme('$touchable-icon-secondary-disabled'),
   } as NonNullable<SxPropWithTintColor>,
   secondaryDisabledText: {
     color: 'n-400',
   },
   secondaryIcon: {
-    tintColor: colorFromCurrentTheme('primary-500'),
+    tintColor: colorFromCurrentTheme('$touchable-icon-secondary'),
   } as NonNullable<SxPropWithTintColor>,
   secondaryPressed: {
     backgroundColor: 'primary-500',
   },
   secondaryPressedIcon: {
-    tintColor: colorFromCurrentTheme('white'),
+    tintColor: colorFromCurrentTheme('$touchable-icon-secondary-pressed'),
   } as NonNullable<SxPropWithTintColor>,
   secondaryPressedText: {
     color: 'white',
@@ -70,19 +70,19 @@ export default Styles.create({
     backgroundColor: 'transparent',
   },
   tertiaryDisabledIcon: {
-    tintColor: colorFromCurrentTheme('n-400'),
+    tintColor: colorFromCurrentTheme('$touchable-icon-secondary-disabled'),
   } as NonNullable<SxPropWithTintColor>,
   tertiaryDisabledText: {
     color: 'n-400',
   },
   tertiaryIcon: {
-    tintColor: colorFromCurrentTheme('primary-500'),
+    tintColor: colorFromCurrentTheme('$touchable-icon-tertiary'),
   } as NonNullable<SxPropWithTintColor>,
   tertiaryPressed: {
     backgroundColor: 'transparent',
   },
   tertiaryPressedIcon: {
-    tintColor: colorFromCurrentTheme('primary-600'),
+    tintColor: colorFromCurrentTheme('$touchable-icon-tertiary-pressed'),
   } as NonNullable<SxPropWithTintColor>,
   tertiaryPressedText: {
     color: 'primary-600',

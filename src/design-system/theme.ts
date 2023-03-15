@@ -4,7 +4,7 @@ import { fontWeights, textVariants } from './typography';
 
 const fontName = 'LeagueSpartan';
 
-export const colors = {
+const palette = {
   // chat
   'chat-1': '#897716',
   'chat-2': '#B48B01',
@@ -52,6 +52,25 @@ export const colors = {
   'warning-700': '#9B6616',
 
   transparent: 'transparent',
+};
+
+export const colors = {
+  // TOUCHABLE
+  '$touchable-icon-primary': palette.white,
+  '$touchable-icon-primary-disabled': palette['n-400'],
+  '$touchable-icon-primary-pressed': palette.white,
+  '$touchable-icon-secondary': palette['primary-500'],
+  '$touchable-icon-secondary-disabled': palette['n-400'],
+  '$touchable-icon-secondary-pressed': palette.white,
+  '$touchable-icon-tertiary': palette['primary-500'],
+  '$touchable-icon-tertiary-disabled': palette['n-400'],
+  '$touchable-icon-tertiary-pressed': palette['primary-600'],
+
+  // MAIN TAB NAV
+  '$main-tab-nav-text': palette['n-500'],
+  '$main-tab-nav-text-focused': palette['primary-500'],
+  '$main-tab-nav-icon-unfocused': palette['n-500'],
+  '$main-tab-nav-icon-focused': palette['primary-500'],
 };
 
 const theme = makeTheme({
