@@ -97,6 +97,11 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
           autoCapitalize="none"
           autoCorrect={false}
           isRequired
+          // TODO: delete props
+          accessibilityLabelledBy={undefined}
+          accessibilityLanguage={undefined}
+          onPressIn={undefined}
+          onPressOut={undefined}
         />
         <DatePicker
           isDatePickerOpen={isDatePickerOpen}
@@ -123,6 +128,12 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
           isRequired
           autoCapitalize="none"
           autoCorrect={false}
+          // TODO: delete props
+          accessibilityLabelledBy={undefined}
+          accessibilityLanguage={undefined}
+          onPressIn={undefined}
+          onPressOut={undefined}
+          autoComplete={undefined}
         />
         <FormInput
           id="passwordConfirmation"
@@ -135,6 +146,12 @@ const SignUpScreen: React.FunctionComponent<SignUpPropTypes> = ({
           isRequired
           autoCapitalize="none"
           autoCorrect={false}
+          // TODO: delete props
+          accessibilityLabelledBy={undefined}
+          accessibilityLanguage={undefined}
+          onPressIn={undefined}
+          onPressOut={undefined}
+          autoComplete={undefined}
         />
       </ScrollView>
       <View sx={styles.content}>

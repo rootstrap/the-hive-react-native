@@ -4,12 +4,12 @@ import { Text } from 'design-system';
 import { SafeAreaView } from 'dripsy';
 
 import styles from './styles';
-import type { HomePropTypes } from './types';
+import type { ChatsPropTypes } from './types';
 
-const HomeScreen: FunctionComponent<HomePropTypes> = () => (
+const ChatsScreen: FunctionComponent<ChatsPropTypes> = () => (
   <SafeAreaView sx={styles.container}>
-    <Text accessibilityRole="text">Home Screen</Text>
+    <Text accessibilityRole="text">Chats Screen</Text>
   </SafeAreaView>
 );
 
-export default HomeScreen;
+export default ChatsScreen;
