@@ -15,6 +15,9 @@ export default Styles.create({
     marginBottom: 8,
     paddingX: 4,
   },
+  required: {
+    paddingLeft: 4,
+  },
   error: {
     color: 'error-700',
     paddingTop: 8,

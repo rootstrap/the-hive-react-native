@@ -105,6 +105,7 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
             <Text
               variant="p-md-regular"
               sx={{
+                ...styles.required,
                 color: getCurrentColor({
                   focus: 'white',
                   filled: 'error-500',
@@ -112,7 +113,7 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
                 }),
                 ...nameSx,
               }}>
-              {` *`}
+              *
             </Text>
           )}
         </View>
@@ -132,7 +133,17 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
         <TextInput
           ref={ref}
           variant="text.p-md-regular"
-          sx={{ ...styles.input, ...inputSx }}
+          sx={{
+            ...styles.input,
+            color: getCurrentColor({
+              error: 'black',
+              success: 'black',
+              focus: 'black',
+              filled: 'black',
+              default: 'n-600',
+            }),
+            ...inputSx,
+          }}
           placeholderTextColor="#2A2F39"
           secureTextEntry={toggle}
           onFocus={_onFocus}
