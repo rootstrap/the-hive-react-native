@@ -4,6 +4,8 @@ import { GestureResponderEvent } from 'react-native';
 import { Image as DripsyImage, TextInput as DripsyTextInput } from 'dripsy';
 import type { SxProp } from 'dripsy';
 
+import { Colors } from 'design-system/types';
+
 import { icons } from '../../assets';
 
 export type IconProps = {
@@ -16,6 +18,7 @@ export type IconProps = {
 export type TextInputProps = {
   name?: string;
   error?: string;
+  isDisabled?: boolean;
   isRequired?: boolean;
   isSuccess?: boolean;
   hideError?: boolean;
@@ -28,8 +31,11 @@ export type TextInputProps = {
   leftIconProps?: IconProps;
 } & Omit<ComponentProps<typeof DripsyTextInput>, 'sx'>;
 
-export type TextInputStates = {
-  isFocused: boolean;
-  isInvalid: boolean;
-  isSuccess?: boolean;
+export type DefaultColors = {
+  disabled?: keyof Colors;
+  error?: keyof Colors;
+  success?: keyof Colors;
+  focus?: keyof Colors;
+  filled?: keyof Colors;
+  default?: keyof Colors;
 };

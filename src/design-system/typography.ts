@@ -58,6 +58,7 @@ export const textVariants = {
   'p-md-regular': {
     fontSize: 16,
     fontWeight: fontWeights.regular,
+    lineHeight: 24,
   },
   'p-md-regular-line': {
     fontSize: 16,
