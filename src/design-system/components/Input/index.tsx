@@ -27,6 +27,7 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
     hideError,
     leftIconProps,
     value,
+    isDisabled,
     ...props
   },
   ref,
@@ -63,22 +64,24 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
 
   const getCurrentColor = useCallback(
     ({
+      disabled = 'n-600',
       error: errorColor = 'error-500',
       success = 'success-500',
       focus = 'primary-500',
       filled = 'n-600',
       default: defaultColor = 'n-600',
     }: DefaultColors = {}) => {
+      const disabledColor = isDisabled ? disabled : undefined;
       const invalidColor = showError ? errorColor : undefined;
       const successColor = isSuccess ? success : undefined;
       const focusColor = isFocused ? focus : undefined;
       const filledColor = isFilled ? filled : undefined;
       const currentColor =
-        focusColor ?? invalidColor ?? successColor ?? filledColor ?? defaultColor;
+        disabledColor ?? focusColor ?? invalidColor ?? successColor ?? filledColor ?? defaultColor;
 
       return currentColor;
     },
-    [isFilled, isFocused, isSuccess, showError],
+    [isDisabled, isFilled, isFocused, isSuccess, showError],
   );
 
   return (
@@ -121,7 +124,9 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
       <View
         sx={{
           ...styles.content,
+          backgroundColor: isDisabled ? 'n-100' : 'white',
           borderColor: getCurrentColor({
+            disabled: 'n-200',
             filled: 'primary-300',
             default: 'n-400',
           }),
@@ -150,6 +155,7 @@ const ForwardInputRefFunction: React.ForwardRefRenderFunction<RNTextInput, TextI
           onBlur={_onBlur}
           onChangeText={_onChangeText}
           value={value}
+          editable={!isDisabled}
           {...props}
         />
         {secureTextEntry && (

@@ -18,6 +18,7 @@ export type IconProps = {
 export type TextInputProps = {
   name?: string;
   error?: string;
+  isDisabled?: boolean;
   isRequired?: boolean;
   isSuccess?: boolean;
   hideError?: boolean;
@@ -31,6 +32,7 @@ export type TextInputProps = {
 } & Omit<ComponentProps<typeof DripsyTextInput>, 'sx'>;
 
 export type DefaultColors = {
+  disabled?: keyof Colors;
   error?: keyof Colors;
   success?: keyof Colors;
   focus?: keyof Colors;

@@ -2,7 +2,6 @@ import { Styles } from 'dripsy';
 
 export default Styles.create({
   content: {
-    backgroundColor: 'white',
     borderRadius: 8,
     borderWidth: 1,
     flexDirection: 'row',
